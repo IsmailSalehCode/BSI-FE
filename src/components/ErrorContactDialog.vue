@@ -12,7 +12,7 @@
         <v-container fluid>
           <v-row
             v-for="item in contactItems"
-            :key="item.context"
+            :key="item.text"
             justify="center"
             align="center"
           >
@@ -33,7 +33,7 @@
               >
               </v-btn>
             </v-col>
-            <v-divider v-if="isNotLast(item.context)"></v-divider>
+            <v-divider v-if="isNotLast(item.text)"></v-divider>
           </v-row>
         </v-container>
       </v-card-text>
@@ -41,12 +41,12 @@
   </v-dialog>
 </template>
 <script>
-import { useIsmailStore } from "@/stores/ismailStore";
+import { useContactStore } from "@/stores/contactStore";
 
 export default {
   setup() {
-    const ismailStore = useIsmailStore();
-    return { ismailStore };
+    const contactStore = useContactStore();
+    return { contactStore };
   },
   data() {
     return {
@@ -54,18 +54,18 @@ export default {
       contactItems: [
         {
           context: "E-mail",
-          text: this.ismailStore.email.text,
-          path: this.ismailStore.email.path,
+          text: this.contactStore.email.text,
+          path: this.contactStore.email.path,
         },
         {
-          context: "Instagram",
-          text: this.ismailStore.instagram.text,
-          path: this.ismailStore.instagram.path,
+          context: "Tel. number 1:",
+          text: this.contactStore.phone1.text,
+          path: this.contactStore.phone1.path,
         },
         {
-          context: "Facebook",
-          text: this.ismailStore.facebook.text,
-          path: this.ismailStore.facebook.path,
+          context: "Tel. number 2:",
+          text: this.contactStore.phone2.text,
+          path: this.contactStore.phone2.path,
         },
       ],
     };
@@ -77,12 +77,12 @@ export default {
     close() {
       this.dialog = false;
     },
-    isNotLast(itemContext) {
+    isNotLast(itemtext) {
       const arr = this.contactItems;
       const lastIndex = arr.length - 1;
       for (let i = 0; i < arr.length; i++) {
         const currItem = arr[i];
-        if (currItem.context == itemContext) {
+        if (currItem.text == itemtext) {
           if (lastIndex == i) {
             // is last
             return false;

@@ -3,34 +3,21 @@
     <v-row style="text-align: center" no-gutters>
       <v-col cols="12" class="py-2">
         <span>
-          &#169; 2022 - Исмаил Салех,&nbsp;
-          <span class="brand-font">SPACE <sup>NGC</sup></span>
+          &#169; {{ new Date().getFullYear() }} -
+          <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
         </span>
       </v-col>
       <v-divider></v-divider>
-      <!-- <v-col v-for="social in socialMediaItems" :key="social.icon">
-        <v-btn
-          :href="social.path"
-          variant="text"
-          rounded="tile"
-          color="white"
-          stacked
-          :prepend-icon="social.icon"
-          style="font-weight: 200; text-transform: none !important"
-          >{{ social.text }}</v-btn
-        >
-      </v-col> -->
-
       <v-col cols="12" class="py-2">
         <ul id="ico">
-          <li v-for="social in socialMediaItems" :key="social.icon">
-            <!-- <a :href="social.path" target="_blank" style="text-decoration: none"
-              ><v-icon>{{ social.icon }}</v-icon>
-            </a> -->
-            <btn-anim-gradient
-              :icon="social.icon"
-              :path="social.path"
-            ></btn-anim-gradient>
+          <li v-for="item in contactItems" :key="item.text">
+            <v-btn
+              size="small"
+              variant="flat"
+              :prepend-icon="item.icon"
+              :href="item.path"
+              >{{ item.text }}</v-btn
+            >
           </li>
         </ul>
       </v-col>
@@ -39,32 +26,30 @@
 </template>
 
 <script>
-import BtnAnimGradient from "./BtnAnimGraident.vue";
-import { useIsmailStore } from "../stores/ismailStore";
+import { useContactStore } from "@/stores/contactStore";
 
 export default {
-  components: { BtnAnimGradient },
   setup() {
-    const ismailStore = useIsmailStore();
-    return { ismailStore };
+    const contactStore = useContactStore();
+    return { contactStore };
   },
   data() {
     return {
-      socialMediaItems: [
+      contactItems: [
         {
-          icon: "mdi-gmail",
-          text: this.ismailStore.email.text,
-          path: this.ismailStore.email.path,
+          icon: "mdi-email-outline",
+          text: this.contactStore.email.text,
+          path: this.contactStore.email.path,
         },
         {
-          icon: "mdi-instagram",
-          text: this.ismailStore.instagram.text,
-          path: this.ismailStore.instagram.path,
+          icon: "mdi-cellphone",
+          text: this.contactStore.phone1.text,
+          path: this.contactStore.phone1.path,
         },
         {
-          icon: "mdi-facebook",
-          text: this.ismailStore.facebook.text,
-          path: this.ismailStore.facebook.path,
+          icon: "mdi-cellphone",
+          text: this.contactStore.phone2.text,
+          path: this.contactStore.phone2.path,
         },
       ],
     };

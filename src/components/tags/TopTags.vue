@@ -27,7 +27,7 @@
 </template>
 <script>
 import TagService from "@/services/TagService";
-import ErrContactDialog from "../contact-ismail/ErrorContactDialog.vue";
+import ErrContactDialog from "../ErrorContactDialog.vue";
 
 export default {
   components: { ErrContactDialog },
