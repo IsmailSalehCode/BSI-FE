@@ -3,7 +3,7 @@
     <v-container>
       <v-col cols="12">
         <v-row style="text-align: center" align="center" justify="center">
-          <span>
+          <span style="font-size: medium">
             &#169; {{ new Date().getFullYear() }} -
             <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
           </span>
@@ -18,15 +18,17 @@
             >
           </v-col>
           <v-col cols="6">
-            <div v-for="item in contactItems" :key="item.text">
-              <v-btn
-                size="small"
-                variant="flat"
-                :prepend-icon="item.icon"
-                :href="item.path"
-                >{{ item.text }}</v-btn
-              >
-            </div>
+            <v-row justify="center" align="center">
+              <div v-for="item in contactItems" :key="item.text">
+                <v-btn
+                  size="small"
+                  variant="flat"
+                  :prepend-icon="item.icon"
+                  :href="item.path"
+                  >{{ item.text }}</v-btn
+                >
+              </div>
+            </v-row>
           </v-col>
         </v-row>
       </v-col>
