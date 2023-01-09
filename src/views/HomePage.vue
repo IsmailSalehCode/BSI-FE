@@ -1,6 +1,4 @@
 <template>
-  <!-- <LandingIntro /> -->
-  <TopTags />
   <p>Здравей</p>
   <v-btn @click="log_isMobile">are u mobile?</v-btn>
   <p>
@@ -116,13 +114,13 @@
 </template>
 
 <script>
-import TopTags from "@/components/tags/TopTags.vue";
+// import TopTags from "@/components/tags/TopTags.vue";
 
 // import LandingIntro from "../sections/LandingIntro.vue";
 export default {
   components: {
     // LandingIntro,
-    TopTags,
+    // TopTags,
   },
   methods: {
     log_isMobile() {

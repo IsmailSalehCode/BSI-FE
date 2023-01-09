@@ -1,14 +1,14 @@
 <template>
   <v-footer absolute app bottom>
     <v-row style="text-align: center" no-gutters>
-      <v-col cols="12" class="py-2">
+      <v-col cols="4" class="py-2">
         <span>
           &#169; {{ new Date().getFullYear() }} -
           <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
         </span>
       </v-col>
       <v-divider></v-divider>
-      <v-col cols="12" class="py-2">
+      <v-col cols="4" class="py-2">
         <ul id="ico">
           <li v-for="item in contactItems" :key="item.text">
             <v-btn
