@@ -1,16 +1,25 @@
 <template>
-  <v-footer absolute app bottom>
-    <v-row style="text-align: center" no-gutters>
-      <v-col cols="4" class="py-2">
+  <v-footer theme="dark" absolute app bottom>
+    <v-row
+      style="text-align: center"
+      no-gutters
+      align="center"
+      justify="center"
+    >
+      <v-col cols="4">
+        <v-btn size="small" variant="flat" @click="openTermsAndConditions"
+          >Terms & Conditions</v-btn
+        >
+      </v-col>
+      <v-col cols="4">
         <span>
           &#169; {{ new Date().getFullYear() }} -
           <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
         </span>
       </v-col>
-      <v-divider></v-divider>
-      <v-col cols="4" class="py-2">
-        <ul id="ico">
-          <li v-for="item in contactItems" :key="item.text">
+      <v-col cols="4">
+        <v-row no-gutters>
+          <v-col v-for="item in contactItems" :key="item.text">
             <v-btn
               size="small"
               variant="flat"
@@ -18,8 +27,8 @@
               :href="item.path"
               >{{ item.text }}</v-btn
             >
-          </li>
-        </ul>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-footer>
@@ -32,6 +41,11 @@ export default {
   setup() {
     const contactStore = useContactStore();
     return { contactStore };
+  },
+  methods: {
+    openTermsAndConditions() {
+      console.log(1);
+    },
   },
   data() {
     return {

@@ -1,5 +1,5 @@
 <template>
-  <v-app theme="dark">
+  <v-app>
     <AppBar />
     <v-main>
       <!-- <DocDialog ref="doc" prop="terms-and-conditions"></DocDialog> -->
@@ -21,18 +21,6 @@ export default {
 </script>
 
 <style>
-/* * {
-  /* font-size: small; 
-} */
-a {
-  color: #269aff;
-  text-decoration: none;
-  transition: all 0.5s;
-}
-a:hover {
-  color: #50adff;
-  text-decoration: solid underline #50adff;
-}
 html {
   overflow: hidden;
   scroll-behavior: smooth;
@@ -60,12 +48,7 @@ p {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0068c3;
+  background: #309fff;
   border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(72, 163, 255);
 }
 </style>
