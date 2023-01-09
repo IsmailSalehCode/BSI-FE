@@ -18,11 +18,8 @@
           item.title
         }}</v-btn>
       </v-col>
+      <v-app-bar-nav-icon class="d-flex d-sm-none"></v-app-bar-nav-icon>
     </template>
-    <v-spacer></v-spacer>
-    <div>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-    </div>
   </v-app-bar>
 </template>
 
