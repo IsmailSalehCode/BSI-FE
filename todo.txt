@@ -1,0 +1,5 @@
+global styles
+
+study from tiktok---
+card max-width: 298.06 px
+card max-height: 532.28px
