@@ -12,7 +12,7 @@
         Blue Sky Invest<v-icon id="iris" right>mdi-office-building </v-icon>
       </v-btn>
     </v-app-bar-title>
-    <template v-slot:append v-if="!isCollapsed">
+    <template v-slot:append>
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
         <v-btn style="font-size: smaller" @click.prevent="item.action" text>{{
           item.title
@@ -20,7 +20,7 @@
       </v-col>
     </template>
     <v-spacer></v-spacer>
-    <div :class="isCollapsed ? '' : 'd-flex d-sm-none'">
+    <div>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </div>
   </v-app-bar>
@@ -72,6 +72,7 @@ export default {
 }
 #appBar {
   background-color: rgb(14, 14, 14);
+  color: white;
 }
 #iris {
   margin: 0px;

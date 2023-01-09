@@ -1,25 +1,21 @@
 <template>
   <v-footer theme="dark" absolute app bottom>
-    <v-row
-      style="text-align: center"
-      no-gutters
-      align="center"
-      justify="center"
-    >
-      <v-col cols="4">
-        <v-btn size="small" variant="flat" @click="openTermsAndConditions"
-          >Terms & Conditions</v-btn
-        >
-      </v-col>
-      <v-col cols="4">
-        <span>
-          &#169; {{ new Date().getFullYear() }} -
-          <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
-        </span>
-      </v-col>
-      <v-col cols="4">
-        <v-row no-gutters>
-          <v-col v-for="item in contactItems" :key="item.text">
+    <v-col cols="12">
+      <span>
+        &#169; {{ new Date().getFullYear() }} -
+        <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
+      </span>
+    </v-col>
+    <v-divider></v-divider>
+    <v-col cols="12">
+      <v-row>
+        <v-col cols="6">
+          <v-btn size="small" variant="flat" @click="openTermsAndConditions"
+            >Terms & Conditions</v-btn
+          >
+        </v-col>
+        <v-col cols="6">
+          <div v-for="item in contactItems" :key="item.text">
             <v-btn
               size="small"
               variant="flat"
@@ -27,10 +23,10 @@
               :href="item.path"
               >{{ item.text }}</v-btn
             >
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
+          </div>
+        </v-col>
+      </v-row>
+    </v-col>
   </v-footer>
 </template>
 
