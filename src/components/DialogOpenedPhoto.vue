@@ -12,12 +12,22 @@
       <v-card-actions class="pt-0 mt-0">
         <v-row no-gutters class="pt-0 mt-0">
           <v-col cols="6"
-            ><v-btn size="small" block rounded="0" elevation="0"
+            ><v-btn
+              size="small"
+              block
+              rounded="0"
+              elevation="0"
+              @click="setPhoto('previous')"
               >&ltcc;</v-btn
             ></v-col
           >
           <v-col cols="6"
-            ><v-btn size="small" block rounded="0" elevation="0"
+            ><v-btn
+              size="small"
+              block
+              rounded="0"
+              elevation="0"
+              @click="setPhoto('next')"
               >&gtcc;</v-btn
             ></v-col
           >
@@ -29,7 +39,7 @@
 <script>
 export default {
   props: {
-    collection: Array,
+    collection: Object,
   },
   data() {
     return {
@@ -38,6 +48,31 @@ export default {
     };
   },
   methods: {
+    setPhoto(target) {
+      const photosCollection = this.collection.photos;
+      const len = photosCollection.length;
+      const currentIndex = this.getCurrentPhotoIndex(photosCollection);
+      let photo;
+      switch (target) {
+        case "previous":
+          photo = photosCollection[(currentIndex + len - 1) % len];
+          break;
+        case "next":
+          photo = photosCollection[(currentIndex + 1) % len];
+          break;
+        default:
+          break;
+      }
+      this.currentPhoto = photo;
+    },
+    getCurrentPhotoIndex(photosCollection) {
+      for (let i = 0; i < photosCollection.length; i++) {
+        const element = photosCollection[i];
+        if (this.currentPhoto.id == element.id) {
+          return i;
+        }
+      }
+    },
     open(photo) {
       this.currentPhoto = photo;
       this.dialog = true;
