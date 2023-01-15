@@ -9,7 +9,7 @@
     <section class="shortIntroduction">
       "An efficient & seasoned construction project management company"
     </section>
-
+    <!-- end of short intro -->
     <div></div>
   </v-container>
 </template>
