@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="mx-auto" rounded="0">
+    <v-card class="mx-auto" rounded="0" flat>
       <v-carousel cycle hide-delimiters show-arrows="hover">
         <v-carousel-item v-for="(link, i) in links" :key="i" eager>
           <v-img
