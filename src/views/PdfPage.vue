@@ -1,5 +1,5 @@
 <template>
-  <v-container style="text-align: center; height: 85vh">
+  <v-container fluid style="text-align: center; height: 85vh">
     <v-container v-if="iframeLoading">
       <v-progress-circular
         :size="70"
@@ -12,9 +12,9 @@
     <iframe
       :src="projectOneDriveLink"
       height="100%"
-      width="90%"
+      width="100%"
       frameborder="0"
-      scrolling="no"
+      scrolling="yes"
       @load="iframeDoneLoading"
     ></iframe>
   </v-container>
