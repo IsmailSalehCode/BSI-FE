@@ -7,6 +7,9 @@ const routes = [
     name: "HomePage",
     component: HomePage,
   },
+  {
+    path: "/contact",
+  },
 ];
 
 const router = createRouter({
