@@ -3,8 +3,8 @@
     <v-carousel
       :height="cardMaxWidth / 1.5"
       cycle
-      hide-delimiters
       show-arrows="hover"
+      hide-delimiters
     >
       <v-carousel-item v-for="(link, i) in links" :key="i" eager>
         <v-img
