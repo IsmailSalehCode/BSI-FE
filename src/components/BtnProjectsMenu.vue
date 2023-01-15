@@ -1,7 +1,7 @@
 <template>
   <v-menu transition="slide-x-transition" theme="dark">
     <template v-slot:activator="{ props }">
-      <v-btn size="small" rounded="0" v-bind="props">Projects</v-btn>
+      <v-btn size="small" rounded="0" v-bind="props" append-icon="mdi-chevron-down">Projects</v-btn>
     </template>
     <v-list density="compact">
       <v-list-item
