@@ -42,8 +42,6 @@ export default {
   data() {
     return {
       iframeLoading: true,
-      //   projectOneDriveLink:
-      // "",
     };
   },
   methods: {
