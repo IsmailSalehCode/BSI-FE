@@ -1,5 +1,5 @@
 <template>
-  <div>asa</div>
+  <div>{{ projectTitle }}</div>
 </template>
 <script>
 export default {
