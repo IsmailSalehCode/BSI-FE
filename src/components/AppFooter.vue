@@ -82,4 +82,9 @@ ul#ico {
   font-size: smaller;
   word-break: keep-all;
 }
+
+.v-btn {
+  text-transform: none;
+  font-size: 0.87rem;
+}
 </style>
