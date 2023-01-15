@@ -6,10 +6,11 @@
   >
     <LandingCarousel />
     <!-- short intro -->
-    <div class="shortIntroduction">
+    <section class="shortIntroduction">
       "An efficient & seasoned construction project management company"
-    </div>
-    <!--  -->
+    </section>
+
+    <div></div>
   </v-container>
 </template>
 
