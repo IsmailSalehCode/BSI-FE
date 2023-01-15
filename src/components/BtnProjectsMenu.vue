@@ -1,14 +1,12 @@
 <template>
-  <v-menu transition="slide-x-transition" theme="dark" v-if="!isMobile">
+  <v-menu theme="dark" v-if="!isMobile">
     <template v-slot:activator="{ props }">
       <v-btn
         size="small"
         rounded="0"
         v-bind="props"
         @click="expanded = !expanded"
-        :append-icon="
-          expanded == true ? 'mdi-chevron-left' : 'mdi-chevron-right'
-        "
+        :append-icon="expanded == true ? 'mdi-chevron-up' : 'mdi-chevron-down'"
         >Projects</v-btn
       >
     </template>
