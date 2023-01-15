@@ -12,6 +12,7 @@
       </v-btn>
     </v-app-bar-title>
     <template v-slot:append>
+      <BtnProjectsMenu />
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
         <v-btn style="font-size: smaller" @click.prevent="item.action" text>{{
           item.title
@@ -23,7 +24,12 @@
 </template>
 
 <script>
+import BtnProjectsMenu from "./BtnProjectsMenu.vue";
+
 export default {
+  components: {
+    BtnProjectsMenu,
+  },
   data() {
     return {
       logo: require("../assets/logo-bsi.png"),
