@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid style="text-align: center; height: 85vh">
+  <!-- <v-container fluid style="text-align: center; height: 85vh">
     <v-container v-if="iframeLoading">
       <v-progress-circular
         :size="70"
@@ -10,23 +10,29 @@
       <h4>Loading...</h4>
     </v-container>
     <iframe
-      :src="projectOneDriveLink"
+      :src="routeParam"
       height="100%"
       width="100%"
       frameborder="0"
       scrolling="yes"
       @load="iframeDoneLoading"
     ></iframe>
-  </v-container>
+  </v-container> -->
+  <div>{{ routeParam }}</div>
 </template>
 
 <script>
 export default {
+  computed: {
+    routeParam() {
+      return this.$route.query.title;
+    },
+  },
   data() {
     return {
       iframeLoading: true,
-      projectOneDriveLink:
-        "https://onedrive.live.com/embed?cid=5E73CF73E97ABE76&resid=5E73CF73E97ABE76%211870&authkey=AO5HsZ4PArq9sCk&em=2",
+      //   projectOneDriveLink:
+      // "",
     };
   },
   methods: {

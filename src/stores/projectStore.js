@@ -150,11 +150,13 @@ export const useProjectStore = defineStore("project", {
         {
           title: "Acres Invest",
           address: "кв. Студентски град, ул. Тодор Недков",
-          path: "/pdf/acres-invest-jsc",
           landing: {
             photo: null,
             order: 4,
           },
+          path: "/pdf/?title=Acres Invest",
+          pdfSrc:
+            "https://onedrive.live.com/embed?cid=5E73CF73E97ABE76&resid=5E73CF73E97ABE76%211870&authkey=AO5HsZ4PArq9sCk&em=2",
         },
       ],
     };
