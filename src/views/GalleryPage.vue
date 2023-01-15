@@ -4,7 +4,7 @@
       {{ project.title }}
     </h1>
     <br />
-    <v-row>
+    <v-row justify="center">
       <v-col
         class="d-flex child-flex"
         v-for="photo in project.photos"
