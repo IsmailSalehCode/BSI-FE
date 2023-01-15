@@ -1,5 +1,5 @@
 <template>
-  <v-dialog theme="dark" max-width="800px" v-model="dialog">
+  <v-dialog theme="dark" max-width="850px" v-model="dialog">
     <v-card>
       <v-toolbar density="compact">
         <v-spacer></v-spacer>
