@@ -10,6 +10,7 @@ export const useProjectStore = defineStore("project", {
           path: "/posts/grand-hotel-abeer",
           landing: {
             photo: "https://imgur.com/2uiEAj0.jpg",
+            order: 1,
           },
         },
         {
@@ -18,6 +19,7 @@ export const useProjectStore = defineStore("project", {
           path: "/posts/pan-ocean",
           landing: {
             photo: "https://i.imgur.com/O99G249.jpg",
+            order: 2,
           },
         },
         {
@@ -26,6 +28,7 @@ export const useProjectStore = defineStore("project", {
           path: "/posts/balkan-pearl",
           landing: {
             photo: "https://i.imgur.com/ndejd2u.jpg",
+            order: 3,
           },
         },
         {
@@ -34,6 +37,7 @@ export const useProjectStore = defineStore("project", {
           path: "/acres-invest-jsc",
           landing: {
             photo: null,
+            order: 4,
           },
         },
       ],

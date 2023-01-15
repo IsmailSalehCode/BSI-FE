@@ -76,7 +76,7 @@ export default {
           res.push(project);
         }
       }
-      return res;
+      return res.sort((a, b) => a.landing.order - b.landing.order);
     },
 
     cardMaxWidth() {
