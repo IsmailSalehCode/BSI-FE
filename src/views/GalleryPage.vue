@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <h1 style="text-align: center; letter-spacing: 4px">
+  <v-container style="background-color: #131313">
+    <h1 style="text-align: center; letter-spacing: 4px; color: white">
       {{ project.title }}
     </h1>
     <br />
@@ -11,8 +11,7 @@
         :key="photo.id"
         cols="12"
         sm="6"
-        md="6"
-        xl="3"
+        md="4"
       >
         <v-img :src="photo.url" cover aspect-ratio="1">
           <template v-slot:placeholder>
