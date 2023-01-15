@@ -73,7 +73,7 @@
             </v-card-text>
             <v-card-text class="pt-0">
               Have an idea? We'd love to
-              <a href="/contact">hear from you!</a>
+              <router-link to="/contact">hear from you!</router-link>
             </v-card-text>
           </v-card>
         </v-col>

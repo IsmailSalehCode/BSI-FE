@@ -33,6 +33,10 @@ export default {
       logo: require("../assets/logo-bsi.png"),
       //   logo: require("../assets/astronaut.png"),
       menuItems: [
+        // {
+        //   title: "Home",
+        //   path: "/",
+        // },
         {
           title: "Contact",
           path: "/contact",
