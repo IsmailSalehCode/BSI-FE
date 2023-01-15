@@ -44,8 +44,8 @@
             <v-card-text class="pt-0">
               The benefits of hiring a general contractor increase the overall
               value of a building as well as provide you, the owner, a relaxed
-              and enjoyable experience before, during, and after the actual
-              construction
+              and enjoyable experience before, during, and after the whole
+              process.
             </v-card-text>
           </v-card>
         </v-col>
