@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2>{{ project.title }}</h2>
+    <h1 style="text-align: center">{{ project.title }}</h1>
     <br />
     <v-row>
       <v-col
