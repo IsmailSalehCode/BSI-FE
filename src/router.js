@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./views/HomePage.vue";
+import ContactPage from "./views/ContactPage.vue";
 // import goTo from "vuetify/lib/services/goto";
 const routes = [
   {
@@ -9,6 +10,7 @@ const routes = [
   },
   {
     path: "/contact",
+    component: ContactPage,
   },
 ];
 
