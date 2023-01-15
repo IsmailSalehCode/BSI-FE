@@ -16,7 +16,7 @@
               <v-text-field
                 v-model.trim="name"
                 dense
-                label="Name"
+                label="Name *"
                 :rules="[
                   rules.required,
                   rules.max(50),
@@ -35,7 +35,7 @@
             validate-on="blur"
             :rules="emailRules"
             dense
-            label="E-mail"
+            label="E-mail *"
             outlined
           ></v-text-field>
           <v-text-field
@@ -51,7 +51,7 @@
             validate-on="blur"
             :rules="[rules.required, rules.min(10), rules.max(1000)]"
             outlined
-            placeholder="Your message here..."
+            placeholder="Your message here... *"
           ></v-textarea>
           <hr />
           <br />
@@ -156,7 +156,7 @@ export default {
               email: this.email,
               message: this.message,
             });
-            if (this.isSuccessful(response)) {
+            if (response.status == 200) {
               this.ok = true;
             } else {
               throw new Error("Response is not 200");
