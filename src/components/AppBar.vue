@@ -14,9 +14,7 @@
     <template v-slot:append>
       <BtnProjectsMenu />
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
-        <v-btn style="font-size: smaller" :to="item.path">{{
-          item.title
-        }}</v-btn>
+        <v-btn style="font-size: small" :to="item.path">{{ item.title }}</v-btn>
       </v-col>
       <v-app-bar-nav-icon class="d-flex d-sm-none"></v-app-bar-nav-icon>
     </template>
