@@ -3,7 +3,7 @@
     <template v-slot:activator="{ props }">
       <v-btn size="small" v-bind="props">Projects</v-btn>
     </template>
-    <v-list>
+    <v-list density="compact">
       <v-list-item
         link
         v-for="project in projects"
