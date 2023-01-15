@@ -13,6 +13,10 @@
             >Terms & Conditions</v-btn
           >
         </v-col>
+        <v-divider
+          :class="smAndDown ? 'd-none' : 'd-flex'"
+          vertical
+        ></v-divider>
         <v-col cols="12" md="6" style="text-align: center">
           <v-row justify="center" align="center" no-gutters>
             <v-col v-for="item in contactItems" :key="item.text">
@@ -34,6 +38,7 @@
 
 <script>
 import { useContactStore } from "@/stores/contactStore";
+import { useDisplay } from "vuetify";
 import DialogTermsConditions from "./DialogTermsConditions.vue";
 export default {
   components: {
@@ -41,7 +46,8 @@ export default {
   },
   setup() {
     const contactStore = useContactStore();
-    return { contactStore };
+    const { smAndDown } = useDisplay();
+    return { contactStore, smAndDown };
   },
   methods: {
     openTermsAndConditions() {
