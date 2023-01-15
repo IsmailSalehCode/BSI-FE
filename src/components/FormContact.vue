@@ -19,7 +19,7 @@
                 label="Name"
                 :rules="[
                   rules.required,
-                  rules.max(300),
+                  rules.max(50),
                   rules.onlyLetters,
                   rules.min(3),
                 ]"
