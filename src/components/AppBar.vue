@@ -12,7 +12,7 @@
       </v-btn>
     </v-app-bar-title>
     <template v-slot:append>
-      <v-col>
+      <v-col class="hidden-xs">
         <BtnProjectsMenu />
       </v-col>
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
