@@ -106,7 +106,7 @@
 <script>
 import CFService from "../services/ContactFormService";
 import { useContactStore } from "@/stores/contactStore";
-import VueRecaptcha from "vue-recaptcha";
+import { VueRecaptcha } from "vue-recaptcha";
 export default {
   components: { VueRecaptcha },
   setup() {
