@@ -8,7 +8,7 @@
         </v-btn>
       </v-toolbar>
       <v-img :src="currentPhoto.url"></v-img>
-      <v-card-text> Collection: {{ collection.title }} </v-card-text>
+      <!-- <v-card-text> Collection: {{ collection.title }} </v-card-text> -->
     </v-card>
   </v-dialog>
 </template>
