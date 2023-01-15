@@ -18,7 +18,10 @@
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
         <v-btn style="font-size: small" :to="item.path">{{ item.title }}</v-btn>
       </v-col>
-      <v-app-bar-nav-icon class="d-flex d-sm-none"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        class="d-flex d-sm-none"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
     </template>
   </v-app-bar>
 </template>
@@ -32,6 +35,7 @@ export default {
   },
   data() {
     return {
+      drawer: false,
       logo: require("../assets/logo-bsi.png"),
       //   logo: require("../assets/astronaut.png"),
       menuItems: [
