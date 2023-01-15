@@ -74,7 +74,6 @@ export default {
         sortable.push(resultValues[project]);
       }
       sortable = sortable.sort((a, b) => a.landing.order - b.landing.order);
-      //not sure how any of this works lol
       return sortable;
     },
     cardMaxWidth() {
