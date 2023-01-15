@@ -1,0 +1,25 @@
+{
+  "title": "Balkan Pearl",
+  "address": "st. Ohridsko Ezero №54",
+  "landing": {
+    "order": "3",
+    "photo": "https://i.imgur.com/ndejd2u.jpg"
+  },
+  "photos": [
+    {
+      "id": 1,
+      "taken": null,
+      "url": "https://i.imgur.com/QdEm07B.jpg"
+    },
+    {
+      "id": 2,
+      "taken": null,
+      "url": "https://i.imgur.com/R9CZm3w.jpg"
+    },
+    {
+      "id": 3,
+      "taken": null,
+      "url": "https://i.imgur.com/ndejd2u.jpg"
+    }
+  ]
+}
