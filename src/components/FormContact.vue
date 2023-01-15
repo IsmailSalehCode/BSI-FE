@@ -23,7 +23,7 @@
                   rules.onlyLetters,
                   rules.min(3),
                 ]"
-                validate-on-blur
+                validate-on="blur"
                 outlined
               ></v-text-field>
             </v-col>
@@ -32,7 +32,7 @@
             v-model.trim="email"
             type="email"
             style="max-width: 300px"
-            validate-on-blur
+            validate-on="blur"
             :rules="emailRules"
             dense
             label="E-mail"
@@ -48,7 +48,7 @@
           ></v-text-field>
           <v-textarea
             v-model.trim="message"
-            validate-on-blur
+            validate-on="blur"
             :rules="[rules.required, rules.min(10), rules.max(1000)]"
             outlined
             placeholder="Your message here..."
