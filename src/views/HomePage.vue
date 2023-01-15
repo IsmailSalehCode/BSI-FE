@@ -1,7 +1,11 @@
 <template>
-  <v-container :fluid="true" class="ma-0 pa-0">
-    <LandingCarousel />
-  </v-container>
+  <!-- <v-container
+    style="background-color: #262626"
+    :fluid="true"
+    class="ma-0 pa-0"
+  > -->
+  <LandingCarousel />
+  <!-- </v-container> -->
   <p>Здравей</p>
   <v-btn @click="log_isMobile">are u mobile?</v-btn>
   <p>

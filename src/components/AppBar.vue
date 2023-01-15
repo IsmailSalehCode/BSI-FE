@@ -3,10 +3,9 @@
     <v-app-bar-title>
       <v-btn
         size="small"
-        class="no-active"
-        to="/"
         variant="outlined"
         color="white"
+        @click="routeToHome"
         rounded
       >
         Blue Sky Invest<v-icon id="iris" right>mdi-office-building </v-icon>
@@ -47,6 +46,9 @@ export default {
     };
   },
   methods: {
+    routeToHome() {
+      this.$router.push("/");
+    },
     blank() {
       alert("blank");
     },
@@ -58,12 +60,6 @@ export default {
 </script>
 
 <style scoped>
-.v-btn--active.no-active::before {
-  opacity: 0 !important;
-}
-.v-btn--active.no-active:hover {
-  text-decoration: none;
-}
 #blackBgColor24 {
   background-color: rgb(24, 24, 24);
 }
