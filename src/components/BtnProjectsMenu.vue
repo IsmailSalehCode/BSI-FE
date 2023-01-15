@@ -11,12 +11,10 @@
         :to="project.path"
       >
         <v-list-item-title>{{ project.title }}</v-list-item-title>
-        <v-divider
-          class="mt-3"
-          v-if="project.divider"
-          color="white"
-          inset
-        ></v-divider>
+
+        <div v-if="!isLast(project.title)">
+          <v-divider class="mt-2" color="white" inset></v-divider>
+        </div>
       </v-list-item>
     </v-list>
   </v-menu>
@@ -27,8 +25,14 @@ import { mapState } from "pinia";
 export default {
   computed: {
     ...mapState(useProjectStore, ["projects"]),
-    noProjects() {
-      return this.projectStore.length == 0;
+  },
+  methods: {
+    isLast(title) {
+      const lastProject = this.projects[this.projects.length - 1];
+      if (title == lastProject.title) {
+        return true;
+      }
+      return false;
     },
   },
 };

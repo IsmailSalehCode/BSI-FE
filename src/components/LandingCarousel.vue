@@ -6,7 +6,11 @@
       show-arrows="hover"
       hide-delimiters
     >
-      <v-carousel-item v-for="project in projects" :key="project.title" eager>
+      <v-carousel-item
+        v-for="project in carouselProjects"
+        :key="project.title"
+        eager
+      >
         <v-img
           class="cardTitle"
           :src="project.landing.photo"
@@ -53,7 +57,6 @@ import { useDisplay } from "vuetify";
 import { useProjectStore } from "@/stores/projectStore";
 import { mapState } from "pinia";
 
-const albums = require.context("../albums", true, /^.*\.json$/);
 export default {
   setup() {
     // Destructure only the keys we want to use
@@ -65,23 +68,17 @@ export default {
   computed: {
     ...mapState(useProjectStore, ["projects"]),
 
-    links() {
-      const result = [];
-      albums.keys().forEach((key) => {
-        const matched = key.match(/([A-Za-z0-9-_]+)\./i);
-        if (matched && matched.length > 1) {
-          const element = matched[1];
-          result[element] = albums(key);
+    carouselProjects() {
+      let res = [];
+      for (let i = 0; i < this.projects.length; i++) {
+        const project = this.projects[i];
+        if (project.landing.photo != null) {
+          res.push(project);
         }
-      });
-      let sortable = [];
-      const resultValues = Object.values(result);
-      for (var project in resultValues) {
-        sortable.push(resultValues[project]);
       }
-      sortable = sortable.sort((a, b) => a.landing.order - b.landing.order);
-      return sortable;
+      return res;
     },
+
     cardMaxWidth() {
       let width = "1000";
 
