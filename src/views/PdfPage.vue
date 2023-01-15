@@ -26,7 +26,7 @@ import { mapState } from "pinia";
 export default {
   computed: {
     targetId() {
-      return this.$route.props.id;
+      return this.$route.params.id;
     },
     ...mapState(useProjectStore, ["projects"]),
     targetUrl() {
