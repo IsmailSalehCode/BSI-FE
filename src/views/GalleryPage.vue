@@ -66,6 +66,6 @@ export default {
 </script>
 <style scoped>
 .v-img {
-  cursor: pointer !important;
+  cursor: zoom-in !important;
 }
 </style>
