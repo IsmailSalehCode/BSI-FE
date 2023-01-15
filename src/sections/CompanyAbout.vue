@@ -44,8 +44,21 @@
         </v-col>
         <v-col>
           <v-card elevation="6" class="mx-auto" max-width="500" min-width="300">
-            <v-card-title>Services</v-card-title>
-            <v-card-text></v-card-text>
+            <v-card-title>By hiring Blue Sky Invest...</v-card-title>
+            <v-card-text>
+              you not only hire that seasoned professional, but a whole team of
+              subcontractors who are experts in their respective fields and have
+              experience working as a team. Whether it be a new construction
+              project, a renovation, or a remodel, BSI has the leadership and
+              the skills needed to deliver the best services to our clients
+              before the shovel hits the ground.
+            </v-card-text>
+            <v-card-text class="pt-0">
+              The benefits of hiring a general contractor increase the overall
+              value of a building as well as provide you, the owner, a relaxed
+              and enjoyable experience before, during, and after the actual
+              construction
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -69,6 +82,7 @@ export default {
 
 <style scoped>
 .v-card-text {
-  line-height: 22px;
+  text-indent: 4px;
+  text-align: justify;
 }
 </style>
