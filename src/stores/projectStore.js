@@ -85,11 +85,6 @@ export const useProjectStore = defineStore("project", {
               url: "https://imgur.com/AkcRcp6.jpg",
             },
             {
-              id: 15,
-              taken: null,
-              url: "https://imgur.com/oQ8PP0m.jpg",
-            },
-            {
               id: 16,
               taken: null,
               url: "https://imgur.com/2uiEAj0.jpg",

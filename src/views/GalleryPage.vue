@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <h2>{{ project.title }}</h2>
+    <br />
     <v-row>
       <v-col
         class="d-flex child-flex"
@@ -8,7 +9,7 @@
         :key="photo.id"
         cols="12"
         sm="6"
-        md="4"
+        md="6"
         xl="3"
       >
         <v-img :src="photo.url">
@@ -46,79 +47,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  padding: 40px;
-}
-
-.heading-text {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.heading-text span {
-  font-weight: 100;
-}
-
-/* Responsive image gallery rules begin*/
-
-.image-gallery {
-  /* Mobile first */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.image-gallery .column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.image-item img {
-  width: 100%;
-  border-radius: 5px;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media only screen and (min-width: 768px) {
-  .image-gallery {
-    flex-direction: row;
-  }
-}
-
-/* overlay styles */
-
-.image-item {
-  position: relative;
-  cursor: pointer;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(57, 57, 57, 0.502);
-  top: 0;
-  left: 0;
-  transform: scale(0);
-  transition: all 0.2s 0.1s ease-in-out;
-  color: #fff;
-  /* center overlay content */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* hover */
-.image-item:hover .overlay {
-  transform: scale(1);
-}
-</style>
+<style scoped></style>
