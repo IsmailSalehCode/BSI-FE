@@ -26,7 +26,7 @@
               With <b>over 20 years of expertise at project management</b> the
               company possesses and follows well-grounded and established
               principles at every step of the project life cycle, ensuring that
-              every investment is profitable.
+              every investment our clients make is profitable.
             </v-card-text>
           </v-card>
         </v-col>
