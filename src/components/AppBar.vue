@@ -24,6 +24,29 @@
       ></v-app-bar-nav-icon>
     </template>
   </v-app-bar>
+  <v-navigation-drawer
+    app
+    color="rgb(14, 14, 14)"
+    v-model="drawer"
+    theme="dark"
+    location="right"
+    temporary
+  >
+    <v-list theme="dark" nav>
+      <BtnProjectsMenu />
+      <v-list-item
+        :style="{ 'text-align': 'center' }"
+        v-for="item in menuItems"
+        :key="item.title"
+        :to="item.path"
+        link
+      >
+        <v-list-item-content>
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+  </v-navigation-drawer>
 </template>
 
 <script>
