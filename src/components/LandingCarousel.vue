@@ -6,10 +6,10 @@
       show-arrows="hover"
       hide-delimiters
     >
-      <v-carousel-item v-for="(link, i) in links" :key="i" eager>
+      <v-carousel-item v-for="project in projects" :key="project.title" eager>
         <v-img
           class="cardTitle"
-          :src="link.landing.photo"
+          :src="project.landing.photo"
           height="100%"
           width="100%"
           eager
@@ -18,10 +18,10 @@
         >
           <div v-if="mdAndUp">
             <v-card-text class="titleBg py-0">
-              {{ link.title }}
+              {{ project.title }}
             </v-card-text>
             <v-card-title class="titleBg pt-0">
-              {{ link.address }}
+              {{ project.address }}
             </v-card-title>
           </div>
           <v-card-text
@@ -31,7 +31,7 @@
           >
             <v-icon x-small dark>mdi-map-marker</v-icon>
             <span style="font-size: 0.85em"
-              ><i> {{ link.title }}, {{ link.address }}</i></span
+              ><i> {{ project.title }}, {{ project.address }}</i></span
             >
           </v-card-text>
           <template v-slot:placeholder>
@@ -50,6 +50,8 @@
 
 <script>
 import { useDisplay } from "vuetify";
+import { useProjectStore } from "@/stores/projectStore";
+import { mapState } from "pinia";
 
 const albums = require.context("../albums", true, /^.*\.json$/);
 export default {
@@ -61,6 +63,8 @@ export default {
   },
 
   computed: {
+    ...mapState(useProjectStore, ["projects"]),
+
     links() {
       const result = [];
       albums.keys().forEach((key) => {
