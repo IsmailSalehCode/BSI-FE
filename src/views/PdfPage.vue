@@ -7,7 +7,7 @@
         color="blue"
         indeterminate
       ></v-progress-circular>
-      <h4>Loading...</h4>
+      <h1>Loading...</h1>
     </v-container>
     <iframe
       :src="targetUrl"
