@@ -16,7 +16,7 @@ const routes = [
     component: ContactPage,
   },
   {
-    path: "/gallery/:prop",
+    path: "/gallery/:id",
     component: GalleryPage,
     props: true,
   },

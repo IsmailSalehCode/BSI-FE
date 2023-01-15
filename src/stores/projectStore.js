@@ -8,7 +8,7 @@ export const useProjectStore = defineStore("project", {
           id: 1,
           title: "Grand Hotel Abeer",
           address: "Velingrad, Nikolay Gyaurov Square",
-          path: "/gallery/grand-hotel-abeer",
+          path: "/gallery/1",
           landing: {
             photo: "https://imgur.com/2uiEAj0.jpg",
             order: 1,
@@ -100,7 +100,7 @@ export const useProjectStore = defineStore("project", {
           id: 2,
           title: "Pan Ocean",
           address: "Sofia, st. Panagyurishte №39",
-          path: "/gallery/pan-ocean",
+          path: "/gallery/2",
           landing: {
             photo: "https://i.imgur.com/O99G249.jpg",
             order: 2,
@@ -127,7 +127,7 @@ export const useProjectStore = defineStore("project", {
           id: 3,
           title: "Balkan Pearl",
           address: "Sofia, st. Ohridsko Ezero №54",
-          path: "/gallery/balkan-pearl",
+          path: "/gallery/3",
           landing: {
             photo: "https://i.imgur.com/ndejd2u.jpg",
             order: 3,
