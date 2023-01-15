@@ -31,7 +31,7 @@
       </v-col>
     </v-row>
   </v-container>
-  <DialogOpenedPhoto ref="dialog_opened_photo" :collection="project.photos" />
+  <DialogOpenedPhoto ref="dialog_opened_photo" :collection="project" />
 </template>
 <script>
 import DialogOpenedPhoto from "@/components/DialogOpenedPhoto.vue";
