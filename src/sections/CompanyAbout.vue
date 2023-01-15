@@ -32,18 +32,6 @@
         </v-col>
         <v-col>
           <v-card elevation="6" class="mx-auto" max-width="500" min-width="300">
-            <v-card-title>Looking Ahead</v-card-title>
-            <v-card-text>
-              We invest in construction projects and collaborate with partners.
-            </v-card-text>
-            <v-card-text class="pt-0">
-              Have an idea? We'd love to
-              <a href="/contact"><strong>hear from you!</strong></a>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col>
-          <v-card elevation="6" class="mx-auto" max-width="500" min-width="300">
             <v-card-title>By hiring Blue Sky Invest...</v-card-title>
             <v-card-text>
               you not only hire that seasoned professional, but a whole team of
@@ -58,6 +46,19 @@
               value of a building as well as provide you, the owner, a relaxed
               and enjoyable experience before, during, and after the actual
               construction
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card elevation="6" class="mx-auto" max-width="500" min-width="300">
+            <v-card-title>Looking Ahead</v-card-title>
+            <v-card-text>
+              We also invest in construction projects and collaborate with
+              partners.
+            </v-card-text>
+            <v-card-text class="pt-0">
+              Have an idea? We'd love to
+              <a href="/contact"><strong>hear from you!</strong></a>
             </v-card-text>
           </v-card>
         </v-col>
