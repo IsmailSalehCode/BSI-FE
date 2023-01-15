@@ -14,6 +14,7 @@
           width="100%"
           eager
           style="background-color: #262626"
+          cover
         >
           <div v-if="mdAndUp">
             <v-card-text class="titleBg py-0">
@@ -91,6 +92,9 @@ export default {
           break;
         case "xl":
           width = 1060;
+          break;
+        case "xxl":
+          width = 1080;
           break;
       }
       return width;
