@@ -16,9 +16,9 @@
       <v-list-item
         link
         v-for="project in projects"
-        :key="project.title"
+        :key="project.id"
         :to="project.path"
-        :class="isLast(project.title) ? '' : 'bottom-border'"
+        :class="isLast(project.id) ? '' : 'bottom-border'"
       >
         <v-list-item-title>{{ project.title }}</v-list-item-title>
       </v-list-item>
@@ -33,7 +33,7 @@
       <v-list-item
         link
         v-for="project in projects"
-        :key="project.title"
+        :key="project.id"
         :to="project.path"
         class="bottom-border"
       >
@@ -56,9 +56,9 @@ export default {
     ...mapState(useProjectStore, ["projects"]),
   },
   methods: {
-    isLast(title) {
+    isLast(id) {
       const lastProject = this.projects[this.projects.length - 1];
-      if (title == lastProject.title) {
+      if (id == lastProject.id) {
         return true;
       }
       return false;

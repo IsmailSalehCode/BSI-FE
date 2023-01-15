@@ -15,7 +15,7 @@
       <v-col class="hidden-xs">
         <BtnProjectsMenu :is-mobile="false" />
       </v-col>
-      <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
+      <v-col class="hidden-xs" v-for="item in menuItems" :key="item.id">
         <v-btn style="font-size: small" :to="item.path">{{ item.title }}</v-btn>
       </v-col>
       <v-app-bar-nav-icon
@@ -37,7 +37,7 @@
       <v-list-item
         style="text-align: center"
         v-for="item in menuItems"
-        :key="item.title"
+        :key="item.id"
         :to="item.path"
         link
       >

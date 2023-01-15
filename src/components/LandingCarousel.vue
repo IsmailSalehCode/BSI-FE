@@ -8,7 +8,7 @@
     >
       <v-carousel-item
         v-for="project in carouselProjects"
-        :key="project.title"
+        :key="project.id"
         eager
       >
         <v-img

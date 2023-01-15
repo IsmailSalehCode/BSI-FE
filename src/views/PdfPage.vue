@@ -25,14 +25,14 @@ import { useProjectStore } from "@/stores/projectStore";
 import { mapState } from "pinia";
 export default {
   computed: {
-    targetTitle() {
-      return this.$route.query.title;
+    targetId() {
+      return this.$route.query.id;
     },
     ...mapState(useProjectStore, ["projects"]),
     targetUrl() {
       for (let i = 0; i < this.projects.length; i++) {
         const element = this.projects[i];
-        if (element.title == this.targetTitle) {
+        if (element.id == this.targetId) {
           return element.pdfSrc;
         }
       }
