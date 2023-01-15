@@ -35,14 +35,16 @@
     <v-list theme="dark" nav>
       <BtnProjectsMenu :is-mobile="true" />
       <v-list-item
-        :style="{ 'text-align': 'center' }"
+        style="text-align: center"
         v-for="item in menuItems"
         :key="item.title"
         :to="item.path"
         link
       >
         <v-list-item-content>
-          <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-list-item-title style="font-size: medium">{{
+            item.title
+          }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>

@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./views/HomePage.vue";
 import ContactPage from "./views/ContactPage.vue";
 import GalleryPage from "./views/GalleryPage.vue";
+import PdfPage from "./views/PdfPage.vue";
+
 // import goTo from "vuetify/lib/services/goto";
 const routes = [
   {
@@ -16,6 +18,11 @@ const routes = [
   {
     path: "/gallery/:prop",
     component: GalleryPage,
+    props: true,
+  },
+  {
+    path: "/pdf/:prop",
+    component: PdfPage,
     props: true,
   },
 ];
