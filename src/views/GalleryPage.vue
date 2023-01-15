@@ -13,7 +13,12 @@
         sm="6"
         md="4"
       >
-        <v-img :src="photo.url" cover aspect-ratio="1">
+        <v-img
+          @click="openFullPhoto(photo)"
+          :src="photo.url"
+          cover
+          aspect-ratio="1"
+        >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular
@@ -26,11 +31,21 @@
       </v-col>
     </v-row>
   </v-container>
+  <DialogOpenedPhoto ref="dialog_opened_photo" :collection="project.photos" />
 </template>
 <script>
+import DialogOpenedPhoto from "@/components/DialogOpenedPhoto.vue";
 import { useProjectStore } from "@/stores/projectStore";
 import { mapState } from "pinia";
 export default {
+  methods: {
+    openFullPhoto(photo) {
+      this.$refs.dialog_opened_photo.open(photo);
+    },
+  },
+  components: {
+    DialogOpenedPhoto,
+  },
   computed: {
     targetId() {
       return this.$route.params.id;
