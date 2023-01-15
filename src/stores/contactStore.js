@@ -4,8 +4,8 @@ export const useContactStore = defineStore("contact", {
   getters: {
     email() {
       return {
-        path: "mailto:bskyinvest@gmail.com",
-        text: "bskyinvest@gmail.com",
+        path: "mailto:office@blueskyinvest.xyz",
+        text: "office@blueskyinvest.xyz",
       };
     },
     phone1() {
