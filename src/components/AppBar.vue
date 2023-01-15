@@ -14,9 +14,7 @@
     <template v-slot:append>
       <BtnProjectsMenu />
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
-        <v-btn style="font-size: smaller" @click.prevent="item.action" text>{{
-          item.title
-        }}</v-btn>
+        <v-btn style="font-size: smaller" text>{{ item.title }}</v-btn>
       </v-col>
       <v-app-bar-nav-icon class="d-flex d-sm-none"></v-app-bar-nav-icon>
     </template>
@@ -36,18 +34,18 @@ export default {
       //   logo: require("../assets/astronaut.png"),
       menuItems: [
         {
-          title: "Публикации",
-          action: this.blank,
+          title: "Contact",
+          path: "/contact",
         },
-        {
-          title: "Участвай",
-          action: this.blank,
-        },
-        {
-          title: "За автора",
-          // tuka shte bude i about
-          action: this.blank,
-        },
+        // {
+        //   title: "Участвай",
+        //   path: this.blank,
+        // },
+        // {
+        //   title: "За автора",
+        //   // tuka shte bude i about
+        //   path: this.blank,
+        // },
       ],
     };
   },
