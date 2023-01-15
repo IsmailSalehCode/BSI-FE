@@ -13,7 +13,7 @@
     </v-app-bar-title>
     <template v-slot:append>
       <v-col class="hidden-xs">
-        <BtnProjectsMenu />
+        <BtnProjectsMenu :is-mobile="false" />
       </v-col>
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
         <v-btn style="font-size: small" :to="item.path">{{ item.title }}</v-btn>
@@ -33,7 +33,7 @@
     temporary
   >
     <v-list theme="dark" nav>
-      <BtnProjectsMenu />
+      <BtnProjectsMenu :is-mobile="true" />
       <v-list-item
         :style="{ 'text-align': 'center' }"
         v-for="item in menuItems"
