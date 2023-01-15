@@ -158,7 +158,7 @@ export const useProjectStore = defineStore("project", {
             photo: null,
             order: 4,
           },
-          path: "/pdf/?id=4",
+          path: "/pdf/4",
           pdfSrc:
             "https://onedrive.live.com/embed?cid=5E73CF73E97ABE76&resid=5E73CF73E97ABE76%211870&authkey=AO5HsZ4PArq9sCk&em=2",
         },
@@ -170,7 +170,7 @@ export const useProjectStore = defineStore("project", {
             photo: null,
             order: 5,
           },
-          path: "/pdf/?id=5",
+          path: "/pdf/5",
           pdfSrc:
             "https://onedrive.live.com/embed?cid=5E73CF73E97ABE76&resid=5E73CF73E97ABE76%211871&authkey=AKNLgxTh7EvMEb8&em=2",
         },

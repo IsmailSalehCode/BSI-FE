@@ -21,8 +21,9 @@ const routes = [
     props: true,
   },
   {
-    path: "/pdf",
+    path: "/pdf/:id",
     component: PdfPage,
+    props: true,
   },
 ];
 
