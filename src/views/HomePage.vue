@@ -1,4 +1,5 @@
 <template>
+  <LandingCarousel />
   <p>Здравей</p>
   <v-btn @click="log_isMobile">are u mobile?</v-btn>
   <p>
@@ -114,11 +115,14 @@
 </template>
 
 <script>
-// import TopTags from "@/components/tags/TopTags.vue";
+import LandingCarousel from "@/components/LandingCarousel.vue";
 
+// import TopTags from "@/components/tags/TopTags.vue";
 // import LandingIntro from "../sections/LandingIntro.vue";
 export default {
   components: {
+    LandingCarousel,
+
     // LandingIntro,
     // TopTags,
   },

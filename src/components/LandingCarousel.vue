@@ -1,13 +1,7 @@
 <template>
   <div>
-    <v-card :max-width="cardMaxWidth" class="mx-auto" tile>
-      <v-carousel
-        :height="cardMaxWidth / 1.5"
-        cycle
-        :continuous="true"
-        hide-delimiters
-        show-arrows-on-hover
-      >
+    <v-card class="mx-auto" rounded="0">
+      <v-carousel cycle hide-delimiters show-arrows="hover">
         <v-carousel-item v-for="(link, i) in links" :key="i" eager>
           <v-img
             class="cardTitle"
@@ -17,22 +11,22 @@
             eager
             style="background-color: #262626"
           >
-            <div v-if="$vuetify.breakpoint.mdAndUp">
-              <v-card-subtitle class="titleBg py-0">
-                {{ $t(link.title) }}
-              </v-card-subtitle>
+            <div v-if="mdAndUp">
+              <v-card-text class="titleBg py-0">
+                {{ link.title }}
+              </v-card-text>
               <v-card-title class="titleBg pt-0">
-                {{ $t(link.address) }}
+                {{ link.address }}
               </v-card-title>
             </div>
             <v-card-text
               class="titleBg py-0 px-1"
               justify="center"
-              v-if="$vuetify.breakpoint.smAndDown"
+              v-if="smAndDown"
             >
               <v-icon x-small dark>mdi-map-marker</v-icon>
               <span style="font-size: 0.85em"
-                ><i> {{ $t(link.title) }}, {{ $t(link.address) }}</i></span
+                ><i> {{ link.title }}, {{ link.address }}</i></span
               >
             </v-card-text>
             <template v-slot:placeholder>
@@ -51,9 +45,16 @@
 </template>
 
 <script>
+import { useDisplay } from "vuetify";
+
 const albums = require.context("../albums", true, /^.*\.json$/);
 export default {
-  name: "LandingCarousel",
+  setup() {
+    // Destructure only the keys we want to use
+    const { smAndDown, mdAndUp } = useDisplay();
+
+    return { smAndDown, mdAndUp };
+  },
   data() {
     return {};
   },
@@ -79,7 +80,7 @@ export default {
     cardMaxWidth() {
       let width = "1000";
 
-      switch (this.$vuetify.breakpoint.name) {
+      switch (this.name.value) {
         case "xs":
         case "sm":
           width = 500;
@@ -101,7 +102,7 @@ export default {
 
 <style>
 .cardTitle {
-  background-color: lightgoldenrodyellow;
+  background-color: white;
   color: white;
   font-weight: 550;
   align-items: flex-end;
