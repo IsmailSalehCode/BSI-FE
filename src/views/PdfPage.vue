@@ -1,5 +1,5 @@
 <template>
-  <!-- <v-container fluid style="text-align: center; height: 85vh">
+  <v-container fluid style="text-align: center; height: 85vh">
     <v-container v-if="iframeLoading">
       <v-progress-circular
         :size="70"
@@ -10,22 +10,33 @@
       <h4>Loading...</h4>
     </v-container>
     <iframe
-      :src="routeParam"
+      :src="targetUrl"
       height="100%"
       width="100%"
       frameborder="0"
       scrolling="yes"
       @load="iframeDoneLoading"
     ></iframe>
-  </v-container> -->
-  <div>{{ routeParam }}</div>
+  </v-container>
 </template>
 
 <script>
+import { useProjectStore } from "@/stores/projectStore";
+import { mapState } from "pinia";
 export default {
   computed: {
-    routeParam() {
+    targetTitle() {
       return this.$route.query.title;
+    },
+    ...mapState(useProjectStore, ["projects"]),
+    targetUrl() {
+      for (let i = 0; i < this.projects.length; i++) {
+        const element = this.projects[i];
+        if (element.title == this.targetTitle) {
+          return element.pdfSrc;
+        }
+      }
+      return null;
     },
   },
   data() {
