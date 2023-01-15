@@ -1,5 +1,5 @@
 {
-  "name": "spacengc",
+  "name": "bsi-2023",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "axios": "^1.2.2",
     "core-js": "^3.8.3",
     "pinia": "^2.0.28",
     "vue": "^3.2.13",
-    "vue-recaptcha": "^2.0.3",
     "vue-router": "^4.1.6",
     "vuetify": "^3.0.0-beta.0"
   },

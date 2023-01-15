@@ -69,11 +69,8 @@
                 <v-col class="pb-3" justify="center" align="center">
                   <vue-recaptcha
                     ref="recaptcha"
-                    style="transform: scale(0.87); transform-origin: center"
                     :sitekey="captchaSiteKey"
-                    theme="light"
-                    :language="selectedLocale"
-                    :loadRecaptchaScript="true"
+                    language="en"
                     @verify="enablePosting"
                     @expired="disablePosting"
                   ></vue-recaptcha>
@@ -108,20 +105,24 @@
 
 <script>
 import CFService from "../services/ContactFormService";
+import { useContactStore } from "@/stores/contactStore";
 import VueRecaptcha from "vue-recaptcha";
-import responseEval from "@/Mixins/responseEval";
 export default {
-  mixins: [responseEval],
   components: { VueRecaptcha },
+  setup() {
+    const store = useContactStore();
+
+    return { store };
+  },
   data() {
     return {
-      captchaSiteKey: this.$store.getters.captchaSiteKey,
+      captchaSiteKey: process.env.VUE_APP_CAPTCHA_KEY,
       devMail: "centriu78@gmail.com",
       captchaToken: null,
       phone: null,
       disabledForm: false,
-      emailRules: this.$store.getters.emailRules,
-      rules: this.$store.getters.rules,
+      emailRules: this.store.emailRules,
+      rules: this.store.rules,
       valid: true,
       name: null,
 
