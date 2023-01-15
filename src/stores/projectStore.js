@@ -158,6 +158,17 @@ export const useProjectStore = defineStore("project", {
           pdfSrc:
             "https://onedrive.live.com/embed?cid=5E73CF73E97ABE76&resid=5E73CF73E97ABE76%211870&authkey=AO5HsZ4PArq9sCk&em=2",
         },
+        {
+          title: "Building Invest 62",
+          address: "кв. Студентски град, ул. Тодор Недков",
+          landing: {
+            photo: null,
+            order: 5,
+          },
+          path: "/pdf/?title=Building Invest 62",
+          pdfSrc:
+            "https://onedrive.live.com/embed?cid=5E73CF73E97ABE76&resid=5E73CF73E97ABE76%211871&authkey=AKNLgxTh7EvMEb8&em=2",
+        },
       ],
     };
   },
