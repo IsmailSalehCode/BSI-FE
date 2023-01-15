@@ -29,19 +29,23 @@
       </v-row>
     </v-container>
   </v-footer>
+  <DialogTermsConditions ref="tc" />
 </template>
 
 <script>
 import { useContactStore } from "@/stores/contactStore";
-
+import DialogTermsConditions from "./DialogTermsConditions.vue";
 export default {
+  components: {
+    DialogTermsConditions,
+  },
   setup() {
     const contactStore = useContactStore();
     return { contactStore };
   },
   methods: {
     openTermsAndConditions() {
-      console.log(1);
+      this.$refs.tc.open();
     },
   },
   data() {
