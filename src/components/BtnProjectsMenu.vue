@@ -1,7 +1,7 @@
 <template>
-  <v-menu>
+  <v-menu transition="slide-x-transition" theme="dark">
     <template v-slot:activator="{ props }">
-      <v-btn v-bind="props">Projects</v-btn>
+      <v-btn size="small" v-bind="props">Projects</v-btn>
     </template>
     <v-list>
       <v-list-item
@@ -11,6 +11,12 @@
         :to="project.path"
       >
         <v-list-item-title>{{ project.title }}</v-list-item-title>
+        <v-divider
+          class="mt-3"
+          v-if="project.divider"
+          color="white"
+          inset
+        ></v-divider>
       </v-list-item>
     </v-list>
   </v-menu>
