@@ -1,10 +1,14 @@
 <template>
   <div>
-    <v-card class="mx-auto" rounded="0" flat>
-      <v-carousel cycle hide-delimiters show-arrows="hover">
+    <v-card :max-width="cardMaxWidth" class="mx-auto" rounded="0" flat>
+      <v-carousel
+        :height="cardMaxWidth / 1.5"
+        cycle
+        hide-delimiters
+        show-arrows="hover"
+      >
         <v-carousel-item v-for="(link, i) in links" :key="i" eager>
           <v-img
-            :cover="smAndDown ? true : false"
             class="cardTitle"
             :src="link.landing.photo"
             height="100%"
@@ -52,14 +56,9 @@ const albums = require.context("../albums", true, /^.*\.json$/);
 export default {
   setup() {
     // Destructure only the keys we want to use
-    const { smAndDown, mdAndUp } = useDisplay();
+    const { smAndDown, mdAndUp, name } = useDisplay();
 
-    return { smAndDown, mdAndUp };
-  },
-  data() {
-    return {
-      cardMaxWidth: 1000,
-    };
+    return { smAndDown, mdAndUp, name };
   },
 
   computed: {
@@ -80,25 +79,24 @@ export default {
       sortable = sortable.sort((a, b) => a.landing.order - b.landing.order);
       return sortable;
     },
-    // cardMaxWidth() {
-    //   let width = "1000";
+    cardMaxWidth() {
+      let width = "1000";
 
-    //   switch (this.$vuetify.) {
-    //     case "xs":
-    //     case "sm":
-    //       width = 500;
-    //       break;
-    //     case "md":
-    //     case "lg":
-    //       width = 900;
-    //       break;
-    //     case "xl":
-    //       width = 1060;
-    //       break;
-    //   }
-    //   // console.log(this.$vuetify.breakpoint.name);
-    //   return width;
-    // },
+      switch (this.name) {
+        case "xs":
+        case "sm":
+          width = 500;
+          break;
+        case "md":
+        case "lg":
+          width = 900;
+          break;
+        case "xl":
+          width = 1060;
+          break;
+      }
+      return width;
+    },
   },
 };
 </script>
