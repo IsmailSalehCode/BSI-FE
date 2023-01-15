@@ -12,7 +12,7 @@
         >Projects</v-btn
       >
     </template>
-    <v-list density="compact">
+    <v-list density="compact" class="pb-2">
       <v-list-item
         link
         v-for="project in projects"
