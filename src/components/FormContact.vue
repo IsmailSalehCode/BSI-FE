@@ -144,7 +144,8 @@ export default {
     },
     async submit() {
       if (this.captchaToken != null) {
-        if (this.$refs.form.validate()) {
+        const { valid } = await this.$refs.form.validate();
+        if (valid) {
           this.loadingSendBtn = true;
           this.disabledForm = true;
           let response = null;
