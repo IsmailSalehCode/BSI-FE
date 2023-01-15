@@ -64,4 +64,8 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.v-img {
+  cursor: pointer !important;
+}
+</style>
