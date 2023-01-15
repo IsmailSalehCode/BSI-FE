@@ -16,6 +16,7 @@ const routes = [
   {
     path: "/gallery/:prop",
     component: GalleryPage,
+    props: true,
   },
 ];
 

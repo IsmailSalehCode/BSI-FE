@@ -1,10 +1,15 @@
 <template>
-  <div>{{ projectTitle }}</div>
+  <v-container>
+    <div>hi</div>
+    <div>{{ routeParam }}</div>
+  </v-container>
 </template>
 <script>
 export default {
-  props: {
-    projectTitle: String,
+  computed: {
+    routeParam() {
+      return this.$route.params.prop;
+    },
   },
 };
 </script>
