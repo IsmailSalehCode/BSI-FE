@@ -5,7 +5,10 @@
         size="small"
         rounded="0"
         v-bind="props"
-        append-icon="mdi-chevron-down"
+        @click="expanded = !expanded"
+        :append-icon="
+          expanded == true ? 'mdi-chevron-left' : 'mdi-chevron-right'
+        "
         >Projects</v-btn
       >
     </template>
@@ -26,6 +29,11 @@
 import { useProjectStore } from "@/stores/projectStore";
 import { mapState } from "pinia";
 export default {
+  data() {
+    return {
+      expanded: false,
+    };
+  },
   computed: {
     ...mapState(useProjectStore, ["projects"]),
   },
