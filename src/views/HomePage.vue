@@ -10,18 +10,21 @@
       "An efficient & seasoned construction project management company"
     </section>
     <!-- end of short intro -->
-    <div></div>
   </v-container>
+  <div>
+    <CompanyAbout />
+  </div>
 </template>
 
 <script>
 import LandingCarousel from "@/components/LandingCarousel.vue";
-
+import CompanyAbout from "@/sections/CompanyAbout.vue";
 // import TopTags from "@/components/tags/TopTags.vue";
 // import LandingIntro from "../sections/LandingIntro.vue";
 export default {
   components: {
     LandingCarousel,
+    CompanyAbout,
 
     // LandingIntro,
     // TopTags,
