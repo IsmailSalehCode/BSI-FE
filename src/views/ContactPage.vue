@@ -1,7 +1,14 @@
 <template>
-  <div></div>
+  <FormContact />
 </template>
+
 <script>
-export default {};
+import FormContact from "@/components/FormContact.vue";
+
+export default {
+  components: {
+    FormContact,
+  },
+};
 </script>
 <style></style>
