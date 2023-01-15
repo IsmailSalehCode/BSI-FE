@@ -11,8 +11,16 @@
       <!-- <v-card-text> Collection: {{ collection.title }} </v-card-text> -->
       <v-card-actions class="pt-0 mt-0">
         <v-row no-gutters class="pt-0 mt-0">
-          <v-col cols="6"><v-btn size="small" block>&ltcc;</v-btn></v-col>
-          <v-col cols="6"><v-btn size="small" block>&gtcc;</v-btn></v-col>
+          <v-col cols="6"
+            ><v-btn size="small" block rounded="0" elevation="0"
+              >&ltcc;</v-btn
+            ></v-col
+          >
+          <v-col cols="6"
+            ><v-btn size="small" block rounded="0" elevation="0"
+              >&gtcc;</v-btn
+            ></v-col
+          >
         </v-row>
       </v-card-actions>
     </v-card>
