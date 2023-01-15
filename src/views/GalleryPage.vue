@@ -6,6 +6,10 @@
         class="d-flex child-flex"
         v-for="photo in project.photos"
         :key="photo.id"
+        cols="12"
+        sm="6"
+        md="4"
+        xl="3"
       >
         <v-img :src="photo.url">
           <template v-slot:placeholder>
