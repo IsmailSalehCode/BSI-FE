@@ -1,7 +1,7 @@
 <template>
   <v-menu transition="slide-x-transition" theme="dark">
     <template v-slot:activator="{ props }">
-      <v-btn size="small" v-bind="props">Projects</v-btn>
+      <v-btn size="small" rounded="0" v-bind="props">Projects</v-btn>
     </template>
     <v-list density="compact">
       <v-list-item
@@ -9,12 +9,9 @@
         v-for="project in projects"
         :key="project.title"
         :to="project.path"
+        :class="isLast(project.title) ? '' : 'bottom-border'"
       >
         <v-list-item-title>{{ project.title }}</v-list-item-title>
-
-        <div v-if="!isLast(project.title)">
-          <v-divider class="mt-2" color="white" inset></v-divider>
-        </div>
       </v-list-item>
     </v-list>
   </v-menu>
@@ -37,4 +34,8 @@ export default {
   },
 };
 </script>
-<style></style>
+<style scoped>
+.bottom-border {
+  border-bottom: white solid 1px;
+}
+</style>
