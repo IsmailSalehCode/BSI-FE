@@ -12,7 +12,7 @@
         md="6"
         xl="3"
       >
-        <v-img :src="photo.url">
+        <v-img :src="photo.url" cover aspect-ratio="1">
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular
