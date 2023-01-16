@@ -13,7 +13,16 @@
         </div>
       </v-col>
       <v-col cols="12" sm="4" style="min-width: 320px">
-        <v-card tile style="max-width: 400px">
+        <v-card variant="outlined" tile style="max-width: 400px">
+          <v-container class="py-0" style="justify-content: end">
+            <v-row justify="end">
+              <v-img
+                aspect-ratio="1"
+                style="max-width: 150px"
+                src="../assets/logo-bsi.png"
+              ></v-img>
+            </v-row>
+          </v-container>
           <v-card-text>
             <p>
               <b>Address: </b>
