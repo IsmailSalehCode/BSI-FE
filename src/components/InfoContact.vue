@@ -14,15 +14,22 @@
       </v-col>
       <v-col cols="12" sm="4" style="min-width: 320px">
         <v-card variant="outlined" tile style="max-width: 400px">
-          <v-container class="py-0" style="justify-content: end">
-            <v-row justify="end">
-              <v-img
-                aspect-ratio="1"
-                style="max-width: 150px"
-                src="../assets/logo-bsi.png"
-              ></v-img>
+          <v-col cols="12">
+            <v-row style="align-items: center">
+              <v-col class="py-0">
+                <h3 style="font-style: italic">
+                  Construction Project Management since 1980
+                </h3>
+              </v-col>
+              <v-col class="py-0">
+                <v-img
+                  aspect-ratio="1"
+                  style="max-width: 150px"
+                  src="../assets/logo-bsi.png"
+                ></v-img>
+              </v-col>
             </v-row>
-          </v-container>
+          </v-col>
           <v-card-text>
             <p>
               <b>Address: </b>
