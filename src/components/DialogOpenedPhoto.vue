@@ -41,6 +41,26 @@ export default {
   props: {
     collection: Object,
   },
+  created() {
+    window.addEventListener("keydown", (e) => {
+      if (this.dialog) {
+        switch (e.key) {
+          case "Escape":
+          case "Backspace":
+            this.close();
+            break;
+          case "ArrowRight":
+          case "ArrowUp":
+            this.setPhoto("next");
+            break;
+          case "ArrowLeft":
+          case "ArrowDown":
+            this.setPhoto("previous");
+            break;
+        }
+      }
+    });
+  },
   data() {
     return {
       dialog: false,
