@@ -1,17 +1,5 @@
 <template>
   <v-container>
-    <!-- <v-row justify="center" align="center">
-      <v-col justify="center" align="center">
-        <v-card rounded="xl" max-width="280" elevation="10" class="py-2">
-          <v-img
-            contain
-            max-width="300"
-            :src="require('../assets/logo-bsi.png')"
-          ></v-img>
-        </v-card>
-      </v-col>
-    </v-row>
-    <br /> -->
     <v-col>
       <v-row justify="center">
         <v-col>
