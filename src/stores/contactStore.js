@@ -20,6 +20,12 @@ export const useContactStore = defineStore("contact", {
         text: "+359 88 924 9559",
       };
     },
+    address() {
+      return {
+        path: "https://goo.gl/maps/9GPG6LYYY6ZDJavp6",
+        text: 'bul. "Slivnitsa" 140, 1303 Sofia Center, Sofia',
+      };
+    },
     emailRules() {
       const emailRules = [
         (v) => !!v || "Required",
