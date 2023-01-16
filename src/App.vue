@@ -22,7 +22,7 @@ export default {
 
 <style>
 html {
-  overflow: hidden;
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
 body {
