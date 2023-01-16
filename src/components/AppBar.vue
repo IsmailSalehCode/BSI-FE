@@ -61,26 +61,11 @@ export default {
   data() {
     return {
       drawer: false,
-      logo: require("../assets/logo-bsi.png"),
-      //   logo: require("../assets/astronaut.png"),
       menuItems: [
-        // {
-        //   title: "Home",
-        //   path: "/",
-        // },
         {
           title: "Contact",
           path: "/contact",
         },
-        // {
-        //   title: "Участвай",
-        //   path: this.blank,
-        // },
-        // {
-        //   title: "За автора",
-        //   // tuka shte bude i about
-        //   path: this.blank,
-        // },
       ],
     };
   },
