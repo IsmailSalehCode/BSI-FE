@@ -25,6 +25,9 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
 }
+.v-application {
+  font-family: "Raleway", Times, serif !important;
+}
 body {
   font-size: smaller;
   /* font-size: medium; */
