@@ -1,22 +1,24 @@
 <template>
   <v-container>
     <v-col>
-      <v-card elevation="6" class="mx-auto" max-width="600" min-width="300">
-        <v-card-title>Welcome</v-card-title>
-        <v-card-text>
-          In the ever-growing fields of residential, industrial, and public
-          construction, Blue Sky Invest excels at fast, cost-effective and
-          proper project execution.
-        </v-card-text>
-        <v-card-text class="pt-0">
-          With <b>over 20 years of expertise at project management</b> the
-          company possesses and follows well-grounded and established principles
-          at every step of the project life cycle, ensuring that every
-          investment our clients make is profitable.
-        </v-card-text>
-      </v-card>
-    </v-col>
-    <!-- <v-col>
+      <v-row justify="center">
+        <v-col>
+          <v-card elevation="6" class="mx-auto" max-width="600" min-width="300">
+            <v-card-title>Welcome</v-card-title>
+            <v-card-text>
+              In the ever-growing fields of residential, industrial, and public
+              construction, Blue Sky Invest excels at fast, cost-effective and
+              proper project execution.
+            </v-card-text>
+            <v-card-text class="pt-0">
+              With <b>over 20 years of expertise at project management</b> the
+              company possesses and follows well-grounded and established
+              principles at every step of the project life cycle, ensuring that
+              every investment our clients make is profitable.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col>
           <v-card elevation="6" class="mx-auto" max-width="500" min-width="300">
             <v-card-title>By hiring Blue Sky Invest...</v-card-title>
             <v-card-text>
@@ -62,7 +64,9 @@
               <router-link to="/contact">hear from you!</router-link>
             </v-card-text>
           </v-card>
-        </v-col>-->
+        </v-col>
+      </v-row>
+    </v-col>
   </v-container>
 </template>
 
@@ -71,12 +75,12 @@ export default {
   data() {
     return {};
   },
-  // methods: {
-  //   goToServices() {
-  //     this.$router.push("/").catch(() => {});
-  //     this.scrollToId("servicesRow");
-  //   },
-  // },
+  methods: {
+    goToServices() {
+      this.$router.push("/").catch(() => {});
+      this.scrollToId("servicesRow");
+    },
+  },
 };
 </script>
 

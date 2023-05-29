@@ -12,6 +12,9 @@
       </v-btn>
     </v-app-bar-title>
     <template v-slot:append>
+      <v-col class="hidden-xs">
+        <BtnProjectsMenu :is-mobile="false" />
+      </v-col>
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.id">
         <v-btn style="font-size: small" :to="item.path">{{ item.title }}</v-btn>
       </v-col>
@@ -30,6 +33,7 @@
     temporary
   >
     <v-list theme="dark" nav>
+      <BtnProjectsMenu :is-mobile="true" />
       <v-list-item
         style="text-align: center"
         v-for="item in menuItems"
@@ -48,8 +52,12 @@
 </template>
 
 <script>
+import BtnProjectsMenu from "./BtnProjectsMenu.vue";
+
 export default {
-  components: {},
+  components: {
+    BtnProjectsMenu,
+  },
   data() {
     return {
       drawer: false,
