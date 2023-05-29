@@ -4,7 +4,6 @@
     :fluid="true"
     class="ma-0 pa-0"
   >
-    <LandingCarousel />
     <!-- short intro -->
     <section class="shortIntroduction">
       "An efficient & seasoned construction project management company"
@@ -17,13 +16,9 @@
 </template>
 
 <script>
-import LandingCarousel from "@/components/LandingCarousel.vue";
 import CompanyAbout from "@/sections/CompanyAbout.vue";
-// import TopTags from "@/components/tags/TopTags.vue";
-// import LandingIntro from "../sections/LandingIntro.vue";
 export default {
   components: {
-    LandingCarousel,
     CompanyAbout,
 
     // LandingIntro,
