@@ -4,6 +4,7 @@
     :fluid="true"
     class="ma-0 pa-0"
   >
+    <NFC_reader />
     <!-- short intro -->
     <section class="shortIntroduction">
       "An efficient & seasoned construction project management company"
@@ -16,10 +17,12 @@
 </template>
 
 <script>
+import NFC_reader from "@/components/NFC_reader.vue";
 import CompanyAbout from "@/sections/CompanyAbout.vue";
 export default {
   components: {
     CompanyAbout,
+    NFC_reader,
 
     // LandingIntro,
     // TopTags,
