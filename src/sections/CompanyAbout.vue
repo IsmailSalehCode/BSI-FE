@@ -18,7 +18,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col>
+        <!-- <v-col>
           <v-card elevation="6" class="mx-auto" max-width="500" min-width="300">
             <v-card-title>By hiring Blue Sky Invest...</v-card-title>
             <v-card-text>
@@ -64,7 +64,7 @@
               <router-link to="/contact">hear from you!</router-link>
             </v-card-text>
           </v-card>
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-col>
   </v-container>
@@ -72,15 +72,12 @@
 
 <script>
 export default {
-  data() {
-    return {};
-  },
-  methods: {
-    goToServices() {
-      this.$router.push("/").catch(() => {});
-      this.scrollToId("servicesRow");
-    },
-  },
+  // methods: {
+  //   goToServices() {
+  //     this.$router.push("/").catch(() => {});
+  //     this.scrollToId("servicesRow");
+  //   },
+  // },
 };
 </script>
 
