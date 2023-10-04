@@ -10,6 +10,9 @@
       </v-toolbar>
       <v-card-title>Terms & Conditions</v-card-title>
       <v-card-text v-html="TC_Content"> </v-card-text>
+      <v-card-actions>
+        <v-btn variant="tonal" @click="close" block>Close T&C</v-btn>
+      </v-card-actions>
     </v-card>
   </v-dialog>
 </template>
