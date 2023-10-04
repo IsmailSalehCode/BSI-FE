@@ -1,5 +1,4 @@
 <template>
-  <!-- IN CASE OF BACKEND FAILURE -->
   <v-dialog theme="dark" max-width="800px" v-model="dialog">
     <v-card>
       <v-toolbar density="compact">
