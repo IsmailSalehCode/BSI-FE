@@ -15,7 +15,7 @@
   </div>
   <br />
   <hr />
-  <InfoContact />
+  <InfoContact id="contact" />
 </template>
 
 <script>

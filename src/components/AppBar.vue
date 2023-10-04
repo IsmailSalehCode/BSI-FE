@@ -13,7 +13,9 @@
     </v-app-bar-title>
     <template v-slot:append>
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.id">
-        <v-btn style="font-size: small" :to="item.path">{{ item.title }}</v-btn>
+        <v-btn style="font-size: small" @click="scrollToId(item.path)">{{
+          item.title
+        }}</v-btn>
       </v-col>
       <v-app-bar-nav-icon
         class="d-flex d-sm-none"
@@ -34,8 +36,7 @@
         style="text-align: center"
         v-for="item in menuItems"
         :key="item.id"
-        :to="item.path"
-        link
+        @click="scrollToId(item.path)"
       >
         <v-list-item-title style="font-size: medium">{{
           item.title
@@ -50,11 +51,23 @@ export default {
   data() {
     return {
       drawer: false,
-      menuItems: [],
+      menuItems: [
+        {
+          id: 1,
+          path: "contact",
+          title: "Contact",
+        },
+      ],
       // menuItems: [{}],
     };
   },
   methods: {
+    scrollToId(itemId) {
+      const element = document.getElementById(itemId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    },
     routeToHome() {
       this.$router.push("/");
     },
