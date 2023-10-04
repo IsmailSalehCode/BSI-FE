@@ -50,12 +50,8 @@ export default {
   data() {
     return {
       drawer: false,
-      menuItems: [
-        {
-          title: "Contact",
-          path: "/contact",
-        },
-      ],
+      menuItems: [],
+      // menuItems: [{}],
     };
   },
   methods: {

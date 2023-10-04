@@ -1,6 +1,6 @@
 <template>
   <v-footer theme="dark" absolute app bottom>
-    <v-container>
+    <v-container fluid>
       <v-row align="center" justify="center">
         <v-col cols="12" style="text-align: center"
           ><span style="font-size: medium">
