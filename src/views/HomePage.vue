@@ -13,16 +13,19 @@
   <div>
     <CompanyAbout />
   </div>
+  <br />
+  <hr />
+  <InfoContact />
 </template>
 
 <script>
 import CompanyAbout from "@/sections/CompanyAbout.vue";
+import InfoContact from "@/components/InfoContact.vue";
+
 export default {
   components: {
     CompanyAbout,
-
-    // LandingIntro,
-    // TopTags,
+    InfoContact,
   },
   methods: {
     log_isMobile() {
