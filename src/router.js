@@ -26,14 +26,16 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: routes,
   scrollBehavior(to, from, savedPosition) {
-    let scrollTo = 0;
     if (to.hash) {
-      scrollTo = to.hash;
+      return {
+        el: to.hash,
+        behavior: "smooth",
+      };
     }
     if (savedPosition) {
-      scrollTo = savedPosition.y;
+      return savedPosition;
     }
-    return scrollTo;
+    return { top: 0 };
   },
 });
 
