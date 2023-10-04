@@ -31,18 +31,11 @@
             </v-row>
           </v-col>
           <v-card-text>
-            <p>
-              <b>Address: </b>
-              {{ contactStore.address.text }}
-            </p>
-            <p><b>E-mail: </b> {{ contactStore.email.text }}</p>
-            <p>
-              <b>Phone 1: </b>
-              {{ contactStore.phone1.text }}
-            </p>
-            <p>
-              <b>Phone 2: </b>
-              {{ contactStore.phone2.text }}
+            <p v-for="item in contactItems" :key="item.text">
+              <b>{{ item.label }}:&nbsp;</b>
+              <a :href="item.path" target="_blank" rel="noopener noreferrer">
+                {{ item.text }}
+              </a>
             </p>
           </v-card-text>
         </v-card>
@@ -52,12 +45,13 @@
 </template>
 
 <script>
-import { useContactStore } from "@/stores/contactStore";
+import { address, email, phone1, phone2 } from "../stores/contactStore";
 
 export default {
-  setup() {
-    const contactStore = useContactStore();
-    return { contactStore };
+  data() {
+    return {
+      contactItems: [address, email, phone1, phone2],
+    };
   },
 };
 </script>

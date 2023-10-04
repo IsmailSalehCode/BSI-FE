@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { useContactStore } from "@/stores/contactStore";
+import { email, phone1, phone2 } from "../stores/contactStore";
 import { useDisplay } from "vuetify";
 import DialogTermsConditions from "./DialogTermsConditions.vue";
 export default {
@@ -45,9 +45,8 @@ export default {
     DialogTermsConditions,
   },
   setup() {
-    const contactStore = useContactStore();
     const { smAndDown } = useDisplay();
-    return { contactStore, smAndDown };
+    return { smAndDown };
   },
   methods: {
     openTermsAndConditions() {
@@ -56,23 +55,7 @@ export default {
   },
   data() {
     return {
-      contactItems: [
-        {
-          icon: "mdi-email-outline",
-          text: this.contactStore.email.text,
-          path: this.contactStore.email.path,
-        },
-        {
-          icon: "mdi-cellphone",
-          text: this.contactStore.phone1.text,
-          path: this.contactStore.phone1.path,
-        },
-        {
-          icon: "mdi-cellphone",
-          text: this.contactStore.phone2.text,
-          path: this.contactStore.phone2.path,
-        },
-      ],
+      contactItems: [email, phone1, phone2],
     };
   },
 };

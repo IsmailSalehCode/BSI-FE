@@ -26,7 +26,7 @@ html {
   scroll-behavior: smooth;
 }
 .v-application {
-  font-family: "Raleway", Times, serif !important;
+  font-family: sans-serif, Times;
 }
 body {
   font-size: smaller;
@@ -35,7 +35,6 @@ body {
   padding: 0;
 }
 p {
-  font-family: Montserrat, sans-serif;
   font-weight: 200;
   text-align: justify;
 }
@@ -53,5 +52,12 @@ p {
 ::-webkit-scrollbar-thumb {
   background: #309fff;
   border-radius: 5px;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:-webkit-any-link:hover {
+  color: rgb(38, 172, 255);
 }
 </style>
