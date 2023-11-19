@@ -58,6 +58,10 @@ export default {
           title: "Projects",
         },
         {
+          path: "/#about",
+          title: "About",
+        },
+        {
           path: "/#contact",
           title: "Contact",
         },

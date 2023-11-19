@@ -15,7 +15,7 @@
   <div id="projects">
     <CompanyProjects />
   </div>
-  <div>
+  <div id="about">
     <CompanyAbout />
   </div>
   <br />
