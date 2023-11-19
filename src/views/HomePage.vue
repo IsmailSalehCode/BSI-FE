@@ -1,4 +1,5 @@
 <template>
+  <CarouselHome />
   <v-container
     style="background-color: #131313"
     :fluid="true"
@@ -21,11 +22,13 @@
 <script>
 import CompanyAbout from "@/sections/CompanyAbout.vue";
 import InfoContact from "@/components/InfoContact.vue";
+import CarouselHome from "@/components/CarouselHome.vue";
 
 export default {
   components: {
     CompanyAbout,
     InfoContact,
+    CarouselHome,
   },
   methods: {
     log_isMobile() {
