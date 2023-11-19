@@ -1,10 +1,11 @@
 <template>
-  <CarouselHome />
   <v-container
     style="background-color: #131313"
     :fluid="true"
     class="ma-0 pa-0"
   >
+    <CarouselHome />
+
     <!-- short intro -->
     <section class="shortIntroduction">
       "An efficient & seasoned construction project management company"
