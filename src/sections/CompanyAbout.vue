@@ -69,7 +69,7 @@
   </v-container>
 </template>
 
-<style scoped>
+<style>
 a {
   font-weight: bold;
 }
