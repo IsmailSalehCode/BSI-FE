@@ -5,8 +5,7 @@ const projects = [
     title: "Hotel Zdravets",
     address: "Velingrad, Nikolay Gyaurov Square",
     landing: {
-      photo:
-        "https://www.hotel-zdravets.com/wp-content/uploads/2019/10/hotel-nachalo.jpg",
+      photo: "https://i.imgur.com/ZwzKEd2.jpg",
       order: 1,
     },
     photos: [

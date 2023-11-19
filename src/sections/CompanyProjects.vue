@@ -5,18 +5,12 @@
         <a
           href="https://drive.google.com/drive/folders/1a9OYMvan8GFMs921dZkwYbymUqTX5Fer?usp=drive_link"
           target="_blank"
+          style="color: #4bb543"
           >Click Here</a
         >
-        for the latest information regarding our projects.
+        to browse all project folders.
       </h2>
     </v-col>
-    <!-- <v-col cols="12">
-      <iframe
-        src="https://drive.google.com/embeddedfolderview?id=1a9OYMvan8GFMs921dZkwYbymUqTX5Fer#grid"
-        width="100%"
-        height="500px"
-      ></iframe>
-    </v-col> -->
     <v-expansion-panels>
       <v-expansion-panel
         v-for="project in Projects"
@@ -25,12 +19,12 @@
       >
         <template #text>
           <div><b>Address: </b>{{ project.address }}</div>
-          <iframe
-            :src="generateGDrive(project.folderId)"
-            width="100%"
-            height="200px"
-            frameborder="1"
-          ></iframe>
+          <div>
+            <b>Folder: </b
+            ><a :href="generateGDriveURL(project.folderId)" target="_blank"
+              >Open</a
+            >
+          </div>
         </template>
       </v-expansion-panel>
     </v-expansion-panels>
@@ -46,8 +40,8 @@ export default {
     };
   },
   methods: {
-    generateGDrive(folderId) {
-      return `https://drive.google.com/embeddedfolderview?id=${folderId}#grid`;
+    generateGDriveURL(folderId) {
+      return `https://drive.google.com/drive/folders/${folderId}?usp=drive_link`;
     },
   },
 };
