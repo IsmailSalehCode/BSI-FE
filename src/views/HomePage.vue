@@ -12,6 +12,9 @@
     </section>
     <!-- end of short intro -->
   </v-container>
+  <div id="projects">
+    <CompanyProjects />
+  </div>
   <div>
     <CompanyAbout />
   </div>
@@ -24,12 +27,14 @@
 import CompanyAbout from "@/sections/CompanyAbout.vue";
 import InfoContact from "@/components/InfoContact.vue";
 import CarouselHome from "@/components/CarouselHome.vue";
+import CompanyProjects from "@/sections/CompanyProjects.vue";
 
 export default {
   components: {
     CompanyAbout,
     InfoContact,
     CarouselHome,
+    CompanyProjects,
   },
   methods: {
     log_isMobile() {
