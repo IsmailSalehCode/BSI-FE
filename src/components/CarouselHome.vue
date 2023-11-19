@@ -3,7 +3,7 @@
     <v-carousel
       :height="cardMaxWidth / 1.5"
       cycle
-      :show-arrows="false"
+      show-arrows="hover"
       hide-delimiters
     >
       <v-carousel-item
