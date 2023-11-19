@@ -1,11 +1,12 @@
 const projects = [
   {
     id: 1,
-    title: "Grand Hotel Abeer",
+    title: "Hotel Zdravets",
     address: "Velingrad, Nikolay Gyaurov Square",
     path: "/gallery/1",
     landing: {
-      photo: "https://imgur.com/2uiEAj0.jpg",
+      photo:
+        "https://www.hotel-zdravets.com/wp-content/uploads/2019/10/hotel-nachalo.jpg",
       order: 1,
     },
     photos: [
