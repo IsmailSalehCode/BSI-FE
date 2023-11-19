@@ -11,7 +11,7 @@
               proper project execution.
             </v-card-text>
             <v-card-text class="pt-0">
-              With <b>over 20 years of expertise at project management</b> the
+              With <b>over 40 years of expertise at project management</b> the
               company possesses and follows well-grounded and established
               principles at every step of the project life cycle, ensuring that
               every investment our clients make is profitable.
