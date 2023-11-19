@@ -13,7 +13,9 @@
     </v-app-bar-title>
     <template v-slot:append>
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
-        <v-btn style="font-size: small" :to="item.path">{{ item.title }}</v-btn>
+        <v-btn :active="false" style="font-size: small" :to="item.path">{{
+          item.title
+        }}</v-btn>
       </v-col>
       <v-app-bar-nav-icon
         class="d-flex d-sm-none"
@@ -35,6 +37,7 @@
         v-for="item in menuItems"
         :key="item.id"
         :to="item.path"
+        :active="false"
       >
         <v-list-item-title style="font-size: medium">{{
           item.title
