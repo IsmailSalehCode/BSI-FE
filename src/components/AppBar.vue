@@ -12,7 +12,7 @@
       </v-btn>
     </v-app-bar-title>
     <template v-slot:append>
-      <v-col class="hidden-xs" v-for="item in menuItems" :key="item.id">
+      <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
         <v-btn style="font-size: small" :to="item.path">{{ item.title }}</v-btn>
       </v-col>
       <v-app-bar-nav-icon
@@ -51,7 +51,10 @@ export default {
       drawer: false,
       menuItems: [
         {
-          id: 1,
+          path: "/#projects",
+          title: "Projects",
+        },
+        {
           path: "/#contact",
           title: "Contact",
         },
