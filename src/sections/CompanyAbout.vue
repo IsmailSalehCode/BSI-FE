@@ -18,7 +18,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <!-- <v-col>
+        <v-col>
           <v-card elevation="6" class="mx-auto" max-width="500" min-width="300">
             <v-card-title>By hiring Blue Sky Invest...</v-card-title>
             <v-card-text>
@@ -41,12 +41,11 @@
           <v-card elevation="6" class="mx-auto" max-width="500" min-width="300">
             <v-card-title>Safety Commitment</v-card-title>
             <v-card-text>
-              We are dedicated to working safely and strive to achieve “Zero
-              Accidents” on every project we build. In addition to enforcing
+              In addition to enforcing
               <a
-                href="https://www.osha.gov/sites/default/files/publications/osha3021.pdf"
+                href="https://www.mlsp.government.bg/usloviya-na-trud"
                 target="_blank"
-                >OSHA regulations</a
+                >government regulations</a
               >, we provide ongoing training and leadership to our staff and
               labor force to ensure a safe work site.
             </v-card-text>
@@ -64,29 +63,18 @@
               <router-link to="/contact">hear from you!</router-link>
             </v-card-text>
           </v-card>
-        </v-col> -->
+        </v-col>
       </v-row>
     </v-col>
   </v-container>
 </template>
-
-<script>
-export default {
-  // methods: {
-  //   goToServices() {
-  //     this.$router.push("/").catch(() => {});
-  //     this.scrollToId("servicesRow");
-  //   },
-  // },
-};
-</script>
 
 <style scoped>
 a {
   font-weight: bold;
 }
 .v-card-text {
-  text-indent: 4px;
+  text-indent: 5px;
   text-align: justify;
 }
 </style>
