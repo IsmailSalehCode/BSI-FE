@@ -1,8 +1,8 @@
 const email = {
   icon: "mdi-email-outline",
   label: "E-mail",
-  path: "mailto:office@blueskyinvest.xyz",
-  text: "office@blueskyinvest.xyz",
+  path: "mailto:jcpc.eu@gmail.com",
+  text: "jcpc.eu@gmail.com",
 };
 const phone1 = {
   icon: "mdi-cellphone",
