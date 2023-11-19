@@ -1,9 +1,9 @@
 const projects = [
   {
     id: 1,
+    folderId: "1r9jtWYz9Y2U8_s9orImrVKEtFgGni9SC",
     title: "Hotel Zdravets",
     address: "Velingrad, Nikolay Gyaurov Square",
-    path: "/gallery/1",
     landing: {
       photo:
         "https://www.hotel-zdravets.com/wp-content/uploads/2019/10/hotel-nachalo.jpg",
@@ -89,9 +89,9 @@ const projects = [
   },
   {
     id: 2,
+    folderId: "1QlELtcp541_tjp6XZOulwCnW-hP2jQJc",
     title: "Pan Ocean",
     address: "Sofia, st. Panagyurishte №39",
-    path: "/gallery/2",
     landing: {
       photo: "https://i.imgur.com/O99G249.jpg",
       order: 2,
@@ -116,9 +116,9 @@ const projects = [
   },
   {
     id: 3,
+    folderId: "1tVhnhBg8QkB62r4Iv1A1qQ2UWy1vC0rC",
     title: "Balkan Pearl",
     address: "Sofia, st. Ohridsko Ezero №54",
-    path: "/gallery/3",
     landing: {
       photo: "https://i.imgur.com/ndejd2u.jpg",
       order: 3,
@@ -144,26 +144,56 @@ const projects = [
   {
     id: 4,
     title: "Acres Invest",
-    address: "кв. Студентски град, ул. Тодор Недков",
+    folderId: "1Gk-Hb2biJIvUV4SLIisY6rV1dsezw22V",
+    address: "Sofia, Evan Evanov Blvd",
     landing: {
       photo: null,
       order: 4,
     },
-    path: "/pdf/4",
     pdfSrc:
       "https://onedrive.live.com/embed?cid=5E73CF73E97ABE76&resid=5E73CF73E97ABE76%211870&authkey=AO5HsZ4PArq9sCk&em=2",
   },
   {
     id: 5,
     title: "Building Invest 62",
-    address: "кв. Студентски град, ул. Тодор Недков",
+    folderId: "1swuuN3MGEQuHXhDTMzZ4CQq4pWBSrKzz",
+    address: "Sofia, Malinova dolina, st. Todor Nedkov",
     landing: {
       photo: null,
       order: 5,
     },
-    path: "/pdf/5",
     pdfSrc:
       "https://onedrive.live.com/embed?cid=5E73CF73E97ABE76&resid=5E73CF73E97ABE76%211871&authkey=AKNLgxTh7EvMEb8&em=2",
+  },
+  {
+    id: 6,
+    folderId: "1OSlL6TyS8N3k9PnOjYqtGTY2P6RWdEuj",
+    title: "Blue Sky Invest",
+    address: "Sofia, 138 Slivnitsa Blvd",
+    landing: {
+      photo: null,
+      order: 6,
+    },
+  },
+  {
+    id: 7,
+    folderId: "166DYcuiHTEMVfNbiD8FVbc7B38eaFuiY",
+    title: "Future Light",
+    address: "Sofia, 140 Slivnitsa Blvd",
+    landing: {
+      photo: null,
+      order: 7,
+    },
+  },
+  {
+    id: 8,
+    folderId: "1SfjHMGBdZCcq4piAmOPnh1vssMaRUf1X",
+    title: "Sofia Future Vision",
+    address: "111 and 113 Bulgarska Morava St",
+    landing: {
+      photo: null,
+      order: 8,
+    },
   },
 ];
 
