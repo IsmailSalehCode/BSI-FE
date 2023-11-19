@@ -1,24 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./views/HomePage.vue";
-import GalleryPage from "./views/GalleryPage.vue";
-import PdfPage from "./views/PdfPage.vue";
 
-// import goTo from "vuetify/lib/services/goto";
 const routes = [
   {
     path: "/",
     name: "HomePage",
     component: HomePage,
-  },
-  {
-    path: "/gallery/:id",
-    component: GalleryPage,
-    props: true,
-  },
-  {
-    path: "/pdf/:id",
-    component: PdfPage,
-    props: true,
   },
 ];
 
