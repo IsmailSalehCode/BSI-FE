@@ -33,7 +33,7 @@
             justify="center"
             v-if="smAndDown"
           >
-            <v-icon x-small dark>mdi-map-marker</v-icon>
+            <v-icon x-small dark :icon="iconMapMarker"></v-icon>
             <span style="font-size: 0.85em"
               ><i> {{ project.title }}, {{ project.address }}</i></span
             >
@@ -55,13 +55,14 @@
 <script>
 import { useDisplay } from "vuetify";
 import { projects } from "@/stores/projectStore";
+import { mdiMapMarker } from "@mdi/js";
 
 export default {
   setup() {
     // Destructure only the keys we want to use
     const { smAndDown, mdAndUp, name } = useDisplay();
-
-    return { smAndDown, mdAndUp, name };
+    const iconMapMarker = mdiMapMarker;
+    return { smAndDown, mdAndUp, name, iconMapMarker };
   },
 
   computed: {

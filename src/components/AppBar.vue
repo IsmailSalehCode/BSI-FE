@@ -8,7 +8,11 @@
         @click="routeToHome"
         rounded
       >
-        Blue Sky Invest<v-icon id="iris" right>mdi-office-building </v-icon>
+        Blue Sky Invest<v-icon
+          id="iris"
+          :icon="iconOfficeBuilding"
+          right
+        ></v-icon>
       </v-btn>
     </v-app-bar-title>
     <template v-slot:append>
@@ -48,10 +52,13 @@
 </template>
 
 <script>
+import { mdiOfficeBuilding } from "@mdi/js";
+
 export default {
   data() {
     return {
       drawer: false,
+      iconOfficeBuilding: mdiOfficeBuilding,
       menuItems: [
         {
           path: "/#projects",

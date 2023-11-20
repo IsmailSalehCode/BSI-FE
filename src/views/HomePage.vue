@@ -18,6 +18,9 @@
   <div id="about">
     <CompanyAbout />
   </div>
+  <div id="partners">
+    <CompanyPartners />
+  </div>
   <br />
   <hr />
   <InfoContact id="contact" />
@@ -25,6 +28,7 @@
 
 <script>
 import CompanyAbout from "@/sections/CompanyAbout.vue";
+import CompanyPartners from "@/sections/CompanyPartners.vue";
 import InfoContact from "@/components/InfoContact.vue";
 import CarouselHome from "@/components/CarouselHome.vue";
 import CompanyProjects from "@/sections/CompanyProjects.vue";
@@ -35,6 +39,7 @@ export default {
     InfoContact,
     CarouselHome,
     CompanyProjects,
+    CompanyPartners,
   },
   methods: {
     log_isMobile() {
