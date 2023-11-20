@@ -66,7 +66,7 @@ export default {
 
   computed: {
     carouselProjects() {
-      console.log(projects);
+      // console.log(projects);
       let res = [];
       for (let i = 0; i < projects.length; i++) {
         const project = projects[i];
