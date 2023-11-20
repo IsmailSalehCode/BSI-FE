@@ -3,9 +3,7 @@
     <v-card>
       <v-toolbar density="compact">
         <v-spacer></v-spacer>
-        <v-btn icon color="red" @click="close">
-          <v-icon>mdi-window-close</v-icon>
-        </v-btn>
+        <v-btn icon color="red" @click="close"> 𐌢 </v-btn>
       </v-toolbar>
       <v-img :src="currentPhoto.url"></v-img>
       <!-- <v-card-text> Collection: {{ collection.title }} </v-card-text> -->

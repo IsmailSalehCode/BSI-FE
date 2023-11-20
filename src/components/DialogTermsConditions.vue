@@ -3,9 +3,7 @@
     <v-card>
       <v-toolbar density="compact">
         <v-spacer></v-spacer>
-        <v-btn icon @click="close">
-          <v-icon>mdi-close</v-icon>
-        </v-btn>
+        <v-btn icon @click="close"> 𐌢 </v-btn>
       </v-toolbar>
       <v-card-title>Terms & Conditions</v-card-title>
       <v-card-text v-html="TC_Content"> </v-card-text>
