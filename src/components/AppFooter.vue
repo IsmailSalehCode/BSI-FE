@@ -2,11 +2,9 @@
   <v-footer theme="dark" absolute app bottom>
     <v-container fluid>
       <v-row align="center" justify="center">
-        <v-col cols="12" style="text-align: center"
-          ><span style="font-size: medium">
-            &#169; {{ new Date().getFullYear() }} -
-            <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
-          </span>
+        <v-col cols="12" style="text-align: center">
+          &#169; {{ new Date().getFullYear() }} -
+          <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
         </v-col>
         <v-col cols="12" md="6" style="text-align: center"
           ><v-btn size="small" variant="flat" @click="openTermsAndConditions"
@@ -23,7 +21,7 @@
               <v-btn
                 size="small"
                 variant="flat"
-                :prepend-icon="item.icon"
+                :prepend-icon="determineIcon(item.label)"
                 :href="item.path"
                 >{{ item.text }}</v-btn
               >
@@ -40,17 +38,30 @@
 import { email, phone1, phone2 } from "../stores/contactStore";
 import { useDisplay } from "vuetify";
 import DialogTermsConditions from "./DialogTermsConditions.vue";
+import { mdiEmailOutline, mdiCellphone } from "@mdi/js";
 export default {
   components: {
     DialogTermsConditions,
   },
   setup() {
     const { smAndDown } = useDisplay();
-    return { smAndDown };
+    const iconMail = mdiEmailOutline;
+    const iconPhone = mdiCellphone;
+
+    return { smAndDown, iconMail, iconPhone };
   },
   methods: {
     openTermsAndConditions() {
       this.$refs.tc.open();
+    },
+    determineIcon(label) {
+      switch (label) {
+        case "E-mail":
+          return this.iconMail;
+        case "Phone №1":
+        case "Phone №2":
+          return this.iconPhone;
+      }
     },
   },
   data() {
@@ -62,18 +73,10 @@ export default {
 </script>
 
 <style scoped>
-.v-footer {
-  font-size: small;
-}
 ul#ico {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-}
-.brand-font {
-  font-family: Michroma, sans-serif;
-  font-size: smaller;
-  word-break: keep-all;
 }
 
 .v-btn {
