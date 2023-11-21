@@ -9,11 +9,7 @@
         class="pb-0"
       >
         <a :href="partner.url" target="_blank" rel="noopener noreferrer">
-          <img
-            style="height: 65px"
-            :src="partner.filePath"
-            :alt="partner.alt"
-          />
+          <img :style="logoStyle" :src="partner.filePath" :alt="partner.alt" />
         </a>
       </v-col>
     </v-row>
@@ -51,6 +47,10 @@ export default {
         partner.filePath = fileRoot.concat(isoPartnerFileName);
       }
       return res;
+    },
+    logoStyle() {
+      /**TODO: Different heights for different breakpoints. useDisplay() */
+      return "height:65px";
     },
   },
 };
