@@ -5,7 +5,7 @@ const projects = [
     title: "Hotel Zdravets",
     address: "Velingrad, Nikolay Gyaurov Square",
     landing: {
-      photo: "https://i.imgur.com/ZwzKEd2.jpg",
+      photo: "https://blueskyinvest.xyz/BSI-Pictures/ZwzKEd2.jpg",
       order: 1,
     },
     photos: [
@@ -92,7 +92,7 @@ const projects = [
     title: "Pan Ocean",
     address: "Sofia, st. Panagyurishte №39",
     landing: {
-      photo: "https://i.imgur.com/O99G249.jpg",
+      photo: "https://blueskyinvest.xyz/BSI-Pictures/O99G249.jpg",
       order: 2,
     },
     photos: [
@@ -119,7 +119,7 @@ const projects = [
     title: "Balkan Pearl",
     address: "Sofia, st. Ohridsko Ezero №54",
     landing: {
-      photo: "https://i.imgur.com/ndejd2u.jpg",
+      photo: "https://blueskyinvest.xyz/BSI-Pictures//ndejd2u.jpg",
       order: 3,
     },
     photos: [
