@@ -18,6 +18,8 @@
   <div id="about">
     <CompanyAbout />
   </div>
+  <br />
+  <hr />
   <div id="partners">
     <CompanyPartners />
   </div>
