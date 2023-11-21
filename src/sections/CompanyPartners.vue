@@ -86,9 +86,10 @@ export default {
 h2 {
   width: 100%;
   text-align: center;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid black;
   line-height: 0.1em;
   margin: 1px 0 40px;
+  color: black;
 }
 
 h2 span {
