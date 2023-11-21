@@ -34,6 +34,12 @@ export default {
         alt: "Octa-light",
         url: "https://www.octa-light.com/",
       },
+      {
+        id: 3,
+        fileName: "rtt-black.png",
+        alt: "Relax Time Travel Ltd.",
+        url: "https://www.linkedin.com/company/relax-time-travel-ltd",
+      },
     ];
     const { name } = useDisplay();
 
