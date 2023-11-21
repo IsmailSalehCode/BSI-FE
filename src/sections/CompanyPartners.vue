@@ -2,7 +2,6 @@
   <v-container fluid>
     <h2><span>Strategic Collaborators</span></h2>
     <v-row style="align-items: center">
-      <v-spacer></v-spacer>
       <v-col v-for="partner in pImgs" :key="partner.alt" class="pb-0">
         <a :href="partner.url" target="_blank" rel="noopener noreferrer">
           <v-img
@@ -12,7 +11,6 @@
           ></v-img>
         </a>
       </v-col>
-      <v-spacer></v-spacer>
     </v-row>
   </v-container>
 </template>
