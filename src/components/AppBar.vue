@@ -7,12 +7,9 @@
         color="white"
         @click="routeToHome"
         rounded
+        style="text-transform: none"
       >
-        Blue Sky Invest<v-icon
-          id="iris"
-          :icon="iconOfficeBuilding"
-          right
-        ></v-icon>
+        BSI Ltd.&nbsp;<v-icon :icon="iconOfficeBuilding" right></v-icon>
       </v-btn>
     </v-app-bar-title>
     <template v-slot:append>
@@ -93,9 +90,5 @@ export default {
 #appBar {
   background-color: rgb(14, 14, 14);
   color: white;
-}
-#iris {
-  margin: 0px;
-  padding-left: 5px;
 }
 </style>
