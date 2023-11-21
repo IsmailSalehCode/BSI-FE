@@ -1,11 +1,17 @@
 <template>
   <v-container fluid>
-    <v-row>
-      <v-col v-for="partner in pImgs" :key="partner.alt">
+    <v-row style="align-items: center">
+      <v-spacer></v-spacer>
+      <v-col v-for="partner in pImgs" :key="partner.alt" class="pb-0">
         <a :href="partner.url" target="_blank" rel="noopener noreferrer">
-          <v-img :src="partner.filePath" :alt="partner.alt"></v-img>
+          <v-img
+            max-height="65px"
+            :src="partner.filePath"
+            :alt="partner.alt"
+          ></v-img>
         </a>
       </v-col>
+      <v-spacer></v-spacer>
     </v-row>
   </v-container>
 </template>
