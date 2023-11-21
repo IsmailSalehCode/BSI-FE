@@ -83,10 +83,10 @@ export default {
 
       switch (this.name) {
         case "xs":
-          width = 524;
+          width = 624;
           break;
         case "sm":
-          width = 600;
+          width = 700;
           break;
         case "md":
         case "lg":
