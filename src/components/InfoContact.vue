@@ -1,5 +1,5 @@
 <template>
-  <v-container style="max-width: 1135px">
+  <v-container style="max-width: 1135px; border-top: solid black 2px">
     <v-row style="justify-content: center">
       <v-col cols="12" sm="8" style="max-width: 800px">
         <div class="map-responsive">

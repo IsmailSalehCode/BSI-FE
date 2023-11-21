@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <h2><span>Strategic Collaborators</span></h2>
+    <h2><span>Our Partners</span></h2>
     <v-row justify="space-evenly">
       <v-col
         v-for="partner in pImgs"

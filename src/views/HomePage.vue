@@ -23,7 +23,6 @@
     <CompanyPartners />
   </div>
   <br />
-  <hr />
   <InfoContact id="contact" />
 </template>
 
