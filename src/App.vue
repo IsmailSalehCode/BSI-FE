@@ -41,7 +41,7 @@ p {
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 3px;
 }
 
 /* Track */
