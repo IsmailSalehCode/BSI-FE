@@ -4,7 +4,7 @@
     <v-row style="align-items: center">
       <v-col
         v-for="partner in pImgs"
-        :key="partner.alt"
+        :key="partner.id"
         style="max-width: fit-content"
         class="pb-0"
       >
@@ -26,11 +26,13 @@ export default {
       fileRoot: "https://blueskyinvest.xyz/BSI-Pictures/partners/",
       partners: [
         {
+          id: 1,
           fileName: "ibt.png",
           alt: "IBT Ltd.",
           url: "https://ibt.bg/index_bg.php",
         },
         {
+          id: 2,
           fileName: "octalight.svg",
           alt: "Octa-light",
           url: "https://www.octa-light.com/",
