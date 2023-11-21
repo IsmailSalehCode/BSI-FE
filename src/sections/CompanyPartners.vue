@@ -16,25 +16,28 @@
   </v-container>
 </template>
 <script>
+import { useDisplay } from "vuetify";
+
 export default {
-  data() {
-    return {
-      fileRoot: "https://blueskyinvest.xyz/BSI-Pictures/partners/",
-      partners: [
-        {
-          id: 1,
-          fileName: "ibt.png",
-          alt: "IBT Ltd.",
-          url: "https://ibt.bg/index_bg.php",
-        },
-        {
-          id: 2,
-          fileName: "octalight.svg",
-          alt: "Octa-light",
-          url: "https://www.octa-light.com/",
-        },
-      ],
-    };
+  setup() {
+    const fileRoot = "https://blueskyinvest.xyz/BSI-Pictures/partners/";
+    const partners = [
+      {
+        id: 1,
+        fileName: "ibt.png",
+        alt: "IBT Ltd.",
+        url: "https://ibt.bg/index_bg.php",
+      },
+      {
+        id: 2,
+        fileName: "octalight.svg",
+        alt: "Octa-light",
+        url: "https://www.octa-light.com/",
+      },
+    ];
+    const { name } = useDisplay();
+
+    return { fileRoot, partners, name };
   },
   computed: {
     pImgs() {
@@ -49,8 +52,18 @@ export default {
       return res;
     },
     logoStyle() {
-      /**TODO: Different heights for different breakpoints. useDisplay() */
-      return "height:65px";
+      switch (this.name) {
+        case "xs":
+          return "height:30px";
+        case "sm":
+          return "height:40px";
+        case "md":
+          return "height:50px";
+        case "lg":
+          return "height:60px";
+        default:
+          return "height:65px";
+      }
     },
   },
 };
