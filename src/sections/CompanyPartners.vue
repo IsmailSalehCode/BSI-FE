@@ -52,18 +52,26 @@ export default {
       return res;
     },
     logoStyle() {
+      console.log(this.name);
+      let height;
       switch (this.name) {
         case "xs":
-          return "height:30px";
+          height = 35;
+          break;
         case "sm":
-          return "height:40px";
+          height = 40;
+          break;
         case "md":
-          return "height:50px";
+          height = 50;
+          break;
         case "lg":
-          return "height:60px";
+          height = 60;
+          break;
         default:
-          return "height:65px";
+          height = 65;
+          break;
       }
+      return `height:${height}px`;
     },
   },
 };
