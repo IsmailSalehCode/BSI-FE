@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <h2><span>Strategic Collaborators</span></h2>
-    <v-row style="align-items: center">
+    <v-row justify="center">
       <v-col
         v-for="partner in pImgs"
         :key="partner.id"
