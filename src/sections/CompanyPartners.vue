@@ -2,13 +2,18 @@
   <v-container fluid>
     <h2><span>Strategic Collaborators</span></h2>
     <v-row style="align-items: center">
-      <v-col v-for="partner in pImgs" :key="partner.alt" class="pb-0">
+      <v-col
+        v-for="partner in pImgs"
+        :key="partner.alt"
+        style="max-width: fit-content"
+        class="pb-0"
+      >
         <a :href="partner.url" target="_blank" rel="noopener noreferrer">
-          <v-img
-            max-height="65px"
+          <img
+            style="height: 65px"
             :src="partner.filePath"
             :alt="partner.alt"
-          ></v-img>
+          />
         </a>
       </v-col>
     </v-row>
