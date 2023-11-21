@@ -1,5 +1,6 @@
 <template>
   <v-container fluid>
+    <h2><span>Strategic Collaborators</span></h2>
     <v-row style="align-items: center">
       <v-spacer></v-spacer>
       <v-col v-for="partner in pImgs" :key="partner.alt" class="pb-0">
@@ -49,4 +50,17 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+<style scoped>
+h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #000;
+  line-height: 0.1em;
+  margin: 1px 0 40px;
+}
+
+h2 span {
+  background: #fff;
+  padding: 0 10px;
+}
+</style>

@@ -19,7 +19,6 @@
     <CompanyAbout />
   </div>
   <br />
-  <hr />
   <div id="partners">
     <CompanyPartners />
   </div>
