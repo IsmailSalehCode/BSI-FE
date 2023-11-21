@@ -35,6 +35,7 @@ body {
   padding: 0;
 }
 p {
+  text-indent: 10px;
   font-weight: 200;
   text-align: justify;
 }
