@@ -42,9 +42,15 @@ export default {
       },
       {
         id: 4,
-        fileName: "mysky-dark.png",
+        fileName: "mysky-dark-v2.png",
         alt: "My Sky EcoPower",
         url: "https://myskystore.it/",
+      },
+      {
+        id: 5,
+        fileName: "hsm-union.png",
+        alt: "HSM Union LTD",
+        url: "https://drive.google.com/file/d/1orkifENeD8h3iXj1e_6BZrH8zsB8_2tC/view?usp=sharing",
       },
     ];
     const { name } = useDisplay();
