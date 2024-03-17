@@ -12,8 +12,8 @@
           ></iframe>
         </div>
       </v-col>
-      <v-col cols="12" sm="4" style="min-width: 320px">
-        <v-card variant="outlined" tile style="max-width: 400px">
+      <v-col cols="12" sm="4" style="min-width: 500px">
+        <v-card variant="outlined" tile>
           <v-col cols="12">
             <v-row style="align-items: center">
               <v-col class="py-0">
@@ -21,7 +21,7 @@
                   Construction Project Management since 1980
                 </h3>
               </v-col>
-              <v-col class="py-0">
+              <v-col class="py-0" style="text-align: -webkit-center">
                 <v-img
                   aspect-ratio="1"
                   style="max-width: 150px"
@@ -45,12 +45,18 @@
 </template>
 
 <script>
-import { address, email, phone1, phone2 } from "../stores/contactStore";
+import {
+  address,
+  email,
+  phoneOsama,
+  phoneKrasi,
+  phoneAccounting,
+} from "../stores/contactStore";
 
 export default {
   data() {
     return {
-      contactItems: [address, email, phone1, phone2],
+      contactItems: [address, email, phoneOsama, phoneKrasi, phoneAccounting],
     };
   },
 };
