@@ -1,7 +1,7 @@
 <template>
   <v-container style="max-width: 1135px">
     <v-row style="justify-content: center">
-      <v-col cols="12" sm="8" style="max-width: 800px">
+      <v-col cols="12" style="max-width: 800px">
         <div class="map-responsive">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11733.833938444843!2d23.2781873!3d42.6728295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85e09ccc6675%3A0xb54eb8de606cb88!2sBlue%20Sky%20Invest%20LTD!5e0!3m2!1sen!2sbg!4v1673862773176!5m2!1sen!2sbg"
@@ -12,7 +12,7 @@
           ></iframe>
         </div>
       </v-col>
-      <v-col cols="12" sm="4" style="min-width: 500px">
+      <v-col cols="12" style="max-width: 500px">
         <v-card variant="outlined" tile>
           <v-col cols="12">
             <v-row style="align-items: center">
@@ -51,12 +51,20 @@ import {
   phoneOsama,
   phoneKrasi,
   phoneAccounting,
+  emailAccounting,
 } from "../stores/contactStore";
 
 export default {
   data() {
     return {
-      contactItems: [address, email, phoneOsama, phoneKrasi, phoneAccounting],
+      contactItems: [
+        address,
+        phoneOsama,
+        email,
+        phoneAccounting,
+        emailAccounting,
+        phoneKrasi,
+      ],
     };
   },
 };

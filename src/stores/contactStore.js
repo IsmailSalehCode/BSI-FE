@@ -3,6 +3,11 @@ const email = {
   path: "mailto:jcpc.eu@gmail.com",
   text: "jcpc.eu@gmail.com",
 };
+const emailAccounting = {
+  label: "E-mail (accounting)",
+  path: "mailto:bskyinvest@gmail.com",
+  text: "bskyinvest@gmail.com",
+};
 const phoneOsama = {
   label: "Osama Saleh (CEO)",
   path: "tel:+359889249558",
@@ -24,4 +29,11 @@ const phoneAccounting = {
   text: "+359 89 723 1823",
 };
 
-export { email, phoneOsama, phoneKrasi, address, phoneAccounting };
+export {
+  email,
+  phoneOsama,
+  phoneKrasi,
+  address,
+  phoneAccounting,
+  emailAccounting,
+};

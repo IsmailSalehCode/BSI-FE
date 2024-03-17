@@ -6,8 +6,8 @@
           &#169; {{ new Date().getFullYear() }} -
           <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
         </v-col>
-        <v-col cols="12" md="6" style="text-align: center"
-          ><v-btn size="small" variant="flat" @click="openTermsAndConditions"
+        <v-col cols="12" style="text-align: center"
+          ><v-btn size="x-small" variant="flat" @click="openTermsAndConditions"
             >Terms & Conditions</v-btn
           >
         </v-col>
