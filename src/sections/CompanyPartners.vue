@@ -40,6 +40,12 @@ export default {
         alt: "Relax Time Travel Ltd.",
         url: "https://www.linkedin.com/company/relax-time-travel-ltd",
       },
+      {
+        id: 4,
+        fileName: "mysky-dark.png",
+        alt: "My Sky EcoPower",
+        url: "https://myskystore.it/",
+      },
     ];
     const { name } = useDisplay();
 
