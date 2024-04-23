@@ -7,7 +7,6 @@
         color="white"
         @click="routeToHome"
         rounded
-        style="text-transform: none"
       >
         BSI Ltd.&nbsp;<v-icon :icon="iconOfficeBuilding" right></v-icon>
       </v-btn>

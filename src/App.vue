@@ -56,9 +56,10 @@ p {
 }
 a:-webkit-any-link {
   text-decoration: none;
+  color: #1fa2dc;
   transition: all 0.3s;
 }
 a:-webkit-any-link:hover {
-  color: rgb(38, 172, 255);
+  color: rgb(27, 164, 250);
 }
 </style>
