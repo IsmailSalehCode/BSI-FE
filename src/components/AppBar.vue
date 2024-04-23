@@ -90,4 +90,11 @@ export default {
   background-color: rgb(14, 14, 14);
   color: white;
 }
+a:-webkit-any-link {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:-webkit-any-link:hover {
+  color: rgb(27, 164, 250);
+}
 </style>

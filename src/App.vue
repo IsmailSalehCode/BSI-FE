@@ -54,12 +54,12 @@ p {
   background: #309fff;
   border-radius: 5px;
 }
-a:-webkit-any-link {
+.customLink {
   text-decoration: none;
-  color: #1fa2dc;
+  color: #2188c3;
   transition: all 0.3s;
 }
-a:-webkit-any-link:hover {
-  color: rgb(27, 164, 250);
+.customLink:hover {
+  color: #1dade7;
 }
 </style>

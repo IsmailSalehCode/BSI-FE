@@ -43,6 +43,7 @@
             <v-card-text>
               In addition to enforcing
               <a
+                class="customLink"
                 href="https://www.mlsp.government.bg/usloviya-na-trud"
                 target="_blank"
                 >government regulations</a
@@ -60,7 +61,9 @@
             </v-card-text>
             <v-card-text class="pt-0">
               Have an idea? We'd love to
-              <router-link to="#contact">hear from you!</router-link>
+              <router-link to="#contact" class="customLink"
+                >hear from you!</router-link
+              >
             </v-card-text>
           </v-card>
         </v-col>

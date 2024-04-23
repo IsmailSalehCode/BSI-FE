@@ -33,7 +33,12 @@
           <v-card-text>
             <p v-for="item in contactItems" :key="item.text">
               <b>{{ item.label }}:&nbsp;</b>
-              <a :href="item.path" target="_blank" rel="noopener noreferrer">
+              <a
+                class="customLink"
+                :href="item.path"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {{ item.text }}
               </a>
             </p>

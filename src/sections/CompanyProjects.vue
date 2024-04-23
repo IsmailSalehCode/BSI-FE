@@ -5,6 +5,7 @@
         <a
           href="https://drive.google.com/drive/folders/1a9OYMvan8GFMs921dZkwYbymUqTX5Fer?usp=drive_link"
           target="_blank"
+          class="customLink"
           >Raising Roofs</a
         >: Explore Our Construction Projects
       </h2>
