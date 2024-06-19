@@ -1,5 +1,3 @@
-# spacengc
-
 ## Project setup
 ```
 npm install
