@@ -4,11 +4,14 @@
       <v-row align="center" justify="center">
         <v-col cols="12" style="text-align: center">
           &#169; {{ new Date().getFullYear() }} -
-          <strong>Blue Sky Invest Ltd.</strong> All rights reserved.
+          <strong>Blue Sky Invest Ltd.</strong> {{ $t("all-rights-reserved") }}.
         </v-col>
         <v-col cols="12" style="text-align: center"
-          ><v-btn size="x-small" variant="flat" @click="openTermsAndConditions"
-            >Terms & Conditions</v-btn
+          ><v-btn
+            size="x-small"
+            variant="flat"
+            @click="openTermsAndConditions"
+            >{{ $t("terms-and-conditions") }}</v-btn
           >
         </v-col>
       </v-row>
