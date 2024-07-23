@@ -2,6 +2,10 @@
   <v-app>
     <AppBar />
     <v-main>
+<<<<<<< HEAD
+=======
+      <!-- <DocDialog ref="doc" prop="terms-and-conditions"></DocDialog> -->
+>>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
       <router-view></router-view>
     </v-main>
     <AppFooter />
@@ -11,14 +15,17 @@
 <script>
 import AppBar from "./components/AppBar.vue";
 import AppFooter from "./components/AppFooter.vue";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
 export default {
   components: {
     AppBar,
     AppFooter,
   },
 };
-// test
+<<<<<<< HEAD
 </script>
 
 <style>
@@ -28,6 +35,11 @@ export default {
 .v-toolbar {
   background-color: lightgray;
 }
+=======
+</script>
+
+<style>
+>>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
 html {
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -48,7 +60,11 @@ p {
 }
 /* width */
 ::-webkit-scrollbar {
+<<<<<<< HEAD
   width: 4px;
+=======
+  width: 3px;
+>>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
 }
 
 /* Track */
@@ -59,6 +75,10 @@ p {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #309fff;
+<<<<<<< HEAD
+=======
+  border-radius: 5px;
+>>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
 }
 .customLink {
   text-decoration: none;

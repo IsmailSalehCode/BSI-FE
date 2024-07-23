@@ -42,11 +42,19 @@ export default {
     CompanyProjects,
     CompanyPartners,
   },
+<<<<<<< HEAD
   // methods: {
   //   log_isMobile() {
   //     alert(this.$vuetify.display.mobile);
   //   },
   // },
+=======
+  methods: {
+    log_isMobile() {
+      alert(this.$vuetify.display.mobile);
+    },
+  },
+>>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
 };
 </script>
 

@@ -1,7 +1,11 @@
 .DS_Store
 node_modules
 /dist
+<<<<<<< HEAD
 # .env ; a different repo will be used for presentation
+=======
+
+>>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
 
 # local env files
 
