@@ -17,20 +17,9 @@ export default defineConfig({
       autoImport: true,
     }),
   ],
-<<<<<<< HEAD
   // define: {
   //   NOVE_ENV: JSON.stringify("development"),
   // },
-=======
-  define: {
-    "process.env": {
-      NOVE_ENV: "development",
-      // API_BASE_URL: "http://localhost:8098/",
-      // NODE_ENV: "production",
-      // API_BASE_URL: "https://spacengc.com/spaceAPI/",
-    },
-  },
->>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

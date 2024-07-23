@@ -25,11 +25,7 @@
                 <v-img
                   aspect-ratio="1"
                   style="max-width: 150px"
-<<<<<<< HEAD
                   src="/logo-bsi.png"
-=======
-                  src="../assets/logo-bsi.png"
->>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
                 ></v-img>
               </v-col>
             </v-row>

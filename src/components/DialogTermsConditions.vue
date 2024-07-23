@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 <!-- eslint-disable vue/no-v-text-v-html-on-component -->
 <template>
   <v-dialog max-width="800px" v-model="dialog">
-=======
-<template>
-  <v-dialog theme="dark" max-width="800px" v-model="dialog">
->>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
     <v-card>
       <v-toolbar density="compact">
         <v-spacer></v-spacer>

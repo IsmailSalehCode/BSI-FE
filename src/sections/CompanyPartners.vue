@@ -70,10 +70,6 @@ export default {
       return res;
     },
     logoStyle() {
-<<<<<<< HEAD
-=======
-      console.log(this.name);
->>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
       let height;
       switch (this.name) {
         case "xs":

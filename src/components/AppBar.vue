@@ -12,11 +12,7 @@
       </v-btn>
     </v-app-bar-title>
     <template v-slot:append>
-<<<<<<< HEAD
       <v-col class="hidden-xs" v-for="item in menuItems" :key="item.path">
-=======
-      <v-col class="hidden-xs" v-for="item in menuItems" :key="item.title">
->>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
         <v-btn :active="false" style="font-size: small" :to="item.path">{{
           item.title
         }}</v-btn>
@@ -79,12 +75,6 @@ export default {
     routeToHome() {
       this.$router.push("/");
     },
-<<<<<<< HEAD
-=======
-    blank() {
-      alert("blank");
-    },
->>>>>>> 49f26bd987c53cbc57b05d7a44834fced59dab52
   },
 };
 </script>
