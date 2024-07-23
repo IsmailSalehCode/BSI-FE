@@ -12,16 +12,17 @@
       </v-btn>
     </v-app-bar-title>
     <template v-slot:append>
-      <v-col class="hidden-xs" v-for="item in menuItems" :key="item.path">
+      <v-col class="hidden-sm" v-for="item in menuItems" :key="item.path">
         <v-btn :active="false" style="font-size: small" :to="item.path">{{
           item.title
         }}</v-btn>
       </v-col>
       <v-app-bar-nav-icon
-        class="d-flex d-sm-none"
+        class="d-flex d-md-none"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
     </template>
+    <SelectorLocale />
   </v-app-bar>
   <v-navigation-drawer
     app
@@ -49,8 +50,12 @@
 
 <script>
 import { mdiOfficeBuilding } from "@mdi/js";
+import SelectorLocale from "./SelectorLocale.vue";
 
 export default {
+  components: {
+    SelectorLocale,
+  },
   data() {
     return {
       drawer: false,
@@ -59,6 +64,10 @@ export default {
         {
           path: "/#projects",
           title: "Projects",
+        },
+        {
+          path: "/modular-houses",
+          title: "Modular Houses",
         },
         {
           path: "/#about",
