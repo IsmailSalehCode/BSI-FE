@@ -18,6 +18,7 @@ export default {
     AppFooter,
   },
 };
+// test
 </script>
 
 <style>
