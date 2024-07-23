@@ -20,11 +20,11 @@ export default {
       selectedLanguage: this.$i18n.locale,
       languages: [
         {
-          title: "english",
+          title: "EN",
           value: "en",
         },
         {
-          title: "български",
+          title: "БГ",
           value: "bg",
         },
       ],
