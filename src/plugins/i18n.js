@@ -8,7 +8,7 @@ const messages = {
 };
 const browserLocale = navigator.language.split("-")[0];
 const i18n = createI18n({
-  locale: messages[browserLocale] ? browserLocale : "bg", // set locale
+  locale: messages[browserLocale] ? browserLocale : "en", // set locale
   fallbackLocale: "en", // set fallback locale
   messages, // set locale messages
 });
