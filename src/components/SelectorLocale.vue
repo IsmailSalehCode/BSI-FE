@@ -18,7 +18,16 @@ export default {
   data() {
     return {
       selectedLanguage: this.$i18n.locale,
-      languages: ["en", "bg"],
+      languages: [
+        {
+          title: "english",
+          value: "en",
+        },
+        {
+          title: "български",
+          value: "bg",
+        },
+      ],
     };
   },
 };
