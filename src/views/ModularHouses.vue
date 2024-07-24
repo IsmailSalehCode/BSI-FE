@@ -12,7 +12,7 @@
           @click="openDialog('see-stages')"
           >{{ $t("btn-label-see-stages") }}</v-btn
         >
-        <h3>{{ $t("unlimited-possibilities") }}</h3>
+        <h3 class="pb-2">{{ $t("unlimited-possibilities") }}</h3>
         <p>{{ $t("unlimited-possibilities-p") }}</p>
       </v-col>
     </v-row>
