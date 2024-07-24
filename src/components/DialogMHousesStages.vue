@@ -14,7 +14,9 @@
         <img-c :src="imgFoundation" />
         <br />
         <img-c :src="imgFoundation2_3" />
-        <!-- <img-c :src="imgFoundation3" /> -->
+        <br />
+        <p>2. {{ $t("walls-and-ceiling") }}</p>
+        <img-c :src="imgWallsAndCeiling" />
       </v-card-text>
     </v-card>
   </v-dialog>
@@ -30,9 +32,9 @@ export default {
     imgFoundation2_3() {
       return `${this.mHousesStagesImgsRoot}/foundation2_3.webp`;
     },
-    // imgFoundation3() {
-    //   return `${this.mHousesStagesImgsRoot}/foundation3.webp`;
-    // },
+    imgWallsAndCeiling() {
+      return `${this.mHousesStagesImgsRoot}/walls-and-ceiling.webp`;
+    },
   },
   data() {
     return {
