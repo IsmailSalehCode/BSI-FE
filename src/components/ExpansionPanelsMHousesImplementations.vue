@@ -36,12 +36,16 @@ export default {
           imgName: "BOX_12x_115_(100)m2.png",
         },
         {
-          title: "Example House 1",
+          title: "Example House X",
           imgName: "example-house-1.png",
         },
         {
-          title: "Example House 2",
+          title: "Example House Y",
           imgName: "example-house-2.png",
+        },
+        {
+          title: "Example House Z",
+          imgName: "8.5x11 IN PB.png",
         },
       ],
     };
