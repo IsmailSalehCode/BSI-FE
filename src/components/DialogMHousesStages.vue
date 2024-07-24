@@ -17,22 +17,28 @@
             <p>1. {{ $t("foundation") }}</p>
           </v-col>
           <v-col cols="12">
-            <img-c :src="imgFoundation" />
+            <img-c :src="getImg('foundation.webp')" />
           </v-col>
           <v-col cols="12">
-            <img-c :src="imgFoundation2_3" />
+            <img-c :src="getImg('foundation2_3.webp')" />
           </v-col>
           <v-col cols="12" class="pb-0">
             <p>2. {{ $t("walls-and-ceiling") }}</p>
           </v-col>
           <v-col cols="12">
-            <img-c :src="imgWallsAndCeiling" />
+            <img-c :src="getImg('walls-and-ceiling.webp')" />
           </v-col>
           <v-col cols="12" class="pb-0">
             <p>3. {{ $t("el-plumbing-plastering") }}</p>
           </v-col>
           <v-col cols="12">
-            <img-c :src="imgElPlPl" />
+            <img-c :src="getImg('electrical-plumbing-plastering.webp')" />
+          </v-col>
+          <v-col cols="12" class="pb-0">
+            <p>4. {{ $t("truck-loading") }}</p>
+          </v-col>
+          <v-col>
+            <img-c :src="getImg('truck-loading.webp')" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -43,20 +49,6 @@
 import ImgC from "./ImgC.vue";
 export default {
   components: { ImgC },
-  computed: {
-    imgFoundation() {
-      return `${this.mHousesStagesImgsRoot}/foundation.webp`;
-    },
-    imgFoundation2_3() {
-      return `${this.mHousesStagesImgsRoot}/foundation2_3.webp`;
-    },
-    imgWallsAndCeiling() {
-      return `${this.mHousesStagesImgsRoot}/walls-and-ceiling.webp`;
-    },
-    imgElPlPl() {
-      return `${this.mHousesStagesImgsRoot}/electrical-plumbing-plastering.webp`;
-    },
-  },
   data() {
     return {
       dialog: false,
@@ -64,6 +56,9 @@ export default {
     };
   },
   methods: {
+    getImg(name) {
+      return `${this.mHousesStagesImgsRoot}/${name}`;
+    },
     open() {
       this.dialog = true;
     },
