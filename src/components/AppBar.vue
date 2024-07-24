@@ -41,7 +41,7 @@
         :active="false"
       >
         <v-list-item-title style="font-size: medium">{{
-          item.title
+          $t(item.title)
         }}</v-list-item-title>
       </v-list-item>
     </v-list>
@@ -63,19 +63,19 @@ export default {
       menuItems: [
         {
           path: "/#projects",
-          title: "Projects",
+          title: "projects",
         },
         {
           path: "/modular-houses",
-          title: "Modular Houses",
+          title: "modular-houses",
         },
         {
           path: "/#about",
-          title: "About",
+          title: "about",
         },
         {
           path: "/#contact",
-          title: "Contact",
+          title: "contact",
         },
       ],
     };
