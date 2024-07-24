@@ -24,6 +24,18 @@ export default {
       imgrootBlueprints: "/mhouses/blueprints",
       items: [
         {
+          title: "48 (40.5) m<sup>2</sup>",
+          imgName: "BOX_5x_48_(40)m2.png",
+        },
+        {
+          title: "57.6 (48) m<sup>2</sup>",
+          imgName: "BOX_6x_58_(48)m2.png",
+        },
+        {
+          title: "67.2 (57.5) m<sup>2</sup>",
+          imgName: "BOX_7x_67_(57)m2.png",
+        },
+        {
           title: "76.8 (63.5) m<sup>2</sup>",
           imgName: "BOX_8x_76_(63)m2.png",
         },
