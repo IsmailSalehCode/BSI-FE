@@ -1,6 +1,6 @@
 <template>
   <v-dialog
-    style="max-width: 800px"
+    style="max-width: 900px"
     v-model="dialog"
     transition="dialog-bottom-transition"
   >
@@ -41,7 +41,7 @@
           <v-col cols="12" class="pb-0">
             <p>4. {{ $t("truck-loading") }}</p>
           </v-col>
-          <v-col>
+          <v-col style="max-width: 450px">
             <img-c :src="getImg('truck-loading.webp')" />
           </v-col>
           <v-col cols="12" class="pb-0">
@@ -50,7 +50,7 @@
           <v-col cols="12" class="pb-0">
             <p>1. {{ $t("transport-and-unloading") }}</p>
           </v-col>
-          <v-col cols="12">
+          <v-col cols="12" style="max-width: 450px">
             <img-c :src="getImg('transport-unloading.webp')" />
           </v-col>
           <v-col cols="12" class="pb-0">
