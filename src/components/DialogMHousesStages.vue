@@ -9,14 +9,32 @@
         $t("title-mhouses-stages")
       }}</v-card-title>
       <v-card-text>
-        <h3>I. {{ $t("on-site-module-building") }}</h3>
-        <p>1. {{ $t("foundation") }}</p>
-        <img-c :src="imgFoundation" />
-        <br />
-        <img-c :src="imgFoundation2_3" />
-        <br />
-        <p>2. {{ $t("walls-and-ceiling") }}</p>
-        <img-c :src="imgWallsAndCeiling" />
+        <v-row>
+          <v-col cols="12" class="pb-0">
+            <h3>I. {{ $t("on-site-module-building") }}</h3>
+          </v-col>
+          <v-col cols="12" class="pb-0">
+            <p>1. {{ $t("foundation") }}</p>
+          </v-col>
+          <v-col cols="12">
+            <img-c :src="imgFoundation" />
+          </v-col>
+          <v-col cols="12">
+            <img-c :src="imgFoundation2_3" />
+          </v-col>
+          <v-col cols="12" class="pb-0">
+            <p>2. {{ $t("walls-and-ceiling") }}</p>
+          </v-col>
+          <v-col cols="12">
+            <img-c :src="imgWallsAndCeiling" />
+          </v-col>
+          <v-col cols="12" class="pb-0">
+            <p>3. {{ $t("el-plumbing-plastering") }}</p>
+          </v-col>
+          <v-col cols="12">
+            <img-c :src="imgElPlPl" />
+          </v-col>
+        </v-row>
       </v-card-text>
     </v-card>
   </v-dialog>
@@ -34,6 +52,9 @@ export default {
     },
     imgWallsAndCeiling() {
       return `${this.mHousesStagesImgsRoot}/walls-and-ceiling.webp`;
+    },
+    imgElPlPl() {
+      return `${this.mHousesStagesImgsRoot}/electrical-plumbing-plastering.webp`;
     },
   },
   data() {
