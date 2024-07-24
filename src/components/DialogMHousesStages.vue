@@ -55,8 +55,23 @@
           <v-col cols="12">
             <img-c :src="getImg('modules-installation.webp')" />
           </v-col>
+          <v-col cols="12" class="pb-0">
+            <p>3. {{ $t("finishing-works") }}</p>
+          </v-col>
+          <v-col cols="12">
+            <img-c :src="getImg('finishing-works.webp')" />
+          </v-col>
+          <v-col cols="12" class="pb-0">
+            <p>4. {{ $t("roof-installation") }}</p>
+          </v-col>
+          <v-col cols="12">
+            <img-c :src="getImg('roof-installation.webp')" />
+          </v-col>
         </v-row>
       </v-card-text>
+      <v-card-actions>
+        <v-btn block @click="close" color="success">{{ $t("close") }}</v-btn>
+      </v-card-actions>
     </v-card>
   </v-dialog>
 </template>
