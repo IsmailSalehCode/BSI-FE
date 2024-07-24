@@ -18,6 +18,10 @@
       <v-container>
         <ExpansionPanelsMHousesImplementations />
       </v-container>
+      <v-col cols="12" class="pb-0">
+        <h2>{{ $t("cta") }}</h2>
+      </v-col>
+      <InfoContact />
     </v-row>
     <DialogMHousesStages ref="see_stages" />
   </v-container>
@@ -25,10 +29,12 @@
 <script>
 import DialogMHousesStages from "../components/DialogMHousesStages.vue";
 import ExpansionPanelsMHousesImplementations from "../components/ExpansionPanelsMHousesImplementations.vue";
+import InfoContact from "@/components/InfoContact.vue";
 export default {
   components: {
     DialogMHousesStages,
     ExpansionPanelsMHousesImplementations,
+    InfoContact,
   },
   methods: {
     openDialog(action) {
