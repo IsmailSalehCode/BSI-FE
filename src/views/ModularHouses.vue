@@ -15,9 +15,9 @@
         <h3 class="pb-2">{{ $t("unlimited-possibilities") }}</h3>
         <p>{{ $t("unlimited-possibilities-p") }}</p>
       </v-col>
-      <v-col cols="12">
+      <v-container>
         <ExpansionPanelsMHousesImplementations />
-      </v-col>
+      </v-container>
     </v-row>
     <DialogMHousesStages ref="see_stages" />
   </v-container>
