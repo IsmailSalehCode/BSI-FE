@@ -9,7 +9,12 @@
         $t("title-mhouses-stages")
       }}</v-card-title>
       <v-card-text>
+        <h3>I. {{ $t("on-site-module-building") }}</h3>
+        <p>1. {{ $t("foundation") }}</p>
         <img-c :src="imgFoundation" />
+        <br />
+        <img-c :src="imgFoundation2_3" />
+        <!-- <img-c :src="imgFoundation3" /> -->
       </v-card-text>
     </v-card>
   </v-dialog>
@@ -22,6 +27,12 @@ export default {
     imgFoundation() {
       return `${this.mHousesStagesImgsRoot}/foundation.webp`;
     },
+    imgFoundation2_3() {
+      return `${this.mHousesStagesImgsRoot}/foundation2_3.webp`;
+    },
+    // imgFoundation3() {
+    //   return `${this.mHousesStagesImgsRoot}/foundation3.webp`;
+    // },
   },
   data() {
     return {
