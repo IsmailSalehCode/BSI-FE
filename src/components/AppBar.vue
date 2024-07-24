@@ -12,7 +12,11 @@
       </v-btn>
     </v-app-bar-title>
     <template v-slot:append>
-      <v-col class="hidden-sm" v-for="item in menuItems" :key="item.path">
+      <v-col
+        class="hidden-sm-and-down"
+        v-for="item in menuItems"
+        :key="item.path"
+      >
         <v-btn :active="false" style="font-size: small" :to="item.path">{{
           item.title
         }}</v-btn>
