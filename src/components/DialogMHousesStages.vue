@@ -1,5 +1,6 @@
 <template>
   <v-dialog
+    :fullscreen="isMobile"
     style="max-width: 900px"
     v-model="dialog"
     transition="dialog-bottom-transition"
@@ -83,8 +84,11 @@
 </template>
 <script>
 import ImgC from "./ImgC.vue";
+import { isMobileMixin } from "../utils/isMobileMixin.js";
+
 export default {
   components: { ImgC },
+  mixins: [isMobileMixin],
   data() {
     return {
       dialog: false,
