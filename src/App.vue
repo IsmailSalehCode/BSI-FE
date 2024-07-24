@@ -24,9 +24,6 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
 }
-.v-application {
-  font-family: sans-serif, Times;
-}
 body {
   font-size: smaller;
   /* font-size: medium; */
