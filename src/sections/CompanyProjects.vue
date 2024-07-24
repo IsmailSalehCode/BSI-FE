@@ -7,7 +7,7 @@
           target="_blank"
           class="customLink"
           >Raising Roofs</a
-        >: Explore Our Construction Projects
+        >: {{ $t("explore-our-prjs") }}
       </h2>
     </v-col>
     <iframe :src="gDriveSrc" width="100%" height="500" frameborder="4"></iframe>
