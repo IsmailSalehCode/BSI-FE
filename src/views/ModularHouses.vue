@@ -2,21 +2,18 @@
   <v-container>
     <v-row class="text-center align-center">
       <v-col cols="12" md="4" lg="5">
-        <h1>Модулярни/сглобяеми къщи</h1>
+        <h1>{{ $t("modular-houses") }}</h1>
       </v-col>
       <v-col cols="12" md="8" lg="7">
-        <h2>Срок на изпълнение: 20-30 дни</h2>
+        <h2>{{ $t("delivery-time") }}</h2>
         <v-btn
           style="text-transform: none"
           variant="plain"
           @click="openDialog('see-stages')"
           >{{ $t("btn-label-see-stages") }}</v-btn
         >
-        <h3>Неограничени възможности</h3>
-        <p>
-          Всякакъв брой етажи, всякаква квадратура на етаж и всякакво
-          разпределение. Разгледайте примерни имплементации по-долу.
-        </p>
+        <h3>{{ $t("unlimited-possibilities") }}</h3>
+        <p>{{ $t("unlimited-possibilities-p") }}</p>
       </v-col>
     </v-row>
     <DialogMHousesStages ref="see_stages" />
