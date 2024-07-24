@@ -7,9 +7,7 @@
     <CarouselHome />
 
     <!-- short intro -->
-    <section class="shortIntroduction">
-      "An efficient & seasoned construction project management company"
-    </section>
+    <section class="shortIntroduction">"{{ $t("short-intro") }}"</section>
     <!-- end of short intro -->
   </v-container>
   <div id="projects">

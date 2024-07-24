@@ -24,7 +24,7 @@
               <v-col class="py-0" style="text-align: -webkit-center">
                 <v-img
                   aspect-ratio="1"
-                  style="max-width: 150px"
+                  style="max-width: 100px"
                   src="/logo-bsi.png"
                 ></v-img>
               </v-col>
