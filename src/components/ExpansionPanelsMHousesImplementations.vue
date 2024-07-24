@@ -1,5 +1,5 @@
 <template>
-  <v-expansion-panels>
+  <v-expansion-panels multiple>
     <v-expansion-panel v-for="i in items" :key="i.title">
       <v-expansion-panel-title>{{ i.title }}</v-expansion-panel-title>
       <v-expansion-panel-text>
