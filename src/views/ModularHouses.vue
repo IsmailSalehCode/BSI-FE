@@ -15,16 +15,20 @@
         <h3 class="pb-2">{{ $t("unlimited-possibilities") }}</h3>
         <p>{{ $t("unlimited-possibilities-p") }}</p>
       </v-col>
+      <v-col cols="12">
+        <ExpansionPanelsMHousesImplementations />
+      </v-col>
     </v-row>
     <DialogMHousesStages ref="see_stages" />
   </v-container>
 </template>
 <script>
 import DialogMHousesStages from "../components/DialogMHousesStages.vue";
-
+import ExpansionPanelsMHousesImplementations from "../components/ExpansionPanelsMHousesImplementations.vue";
 export default {
   components: {
     DialogMHousesStages,
+    ExpansionPanelsMHousesImplementations,
   },
   methods: {
     openDialog(action) {
