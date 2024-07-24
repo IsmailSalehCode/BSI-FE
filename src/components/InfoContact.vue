@@ -18,7 +18,7 @@
             <v-row style="align-items: center">
               <v-col class="py-0">
                 <h3 style="font-style: italic">
-                  Construction Project Management since 1980
+                  {{ $t("construction-prj-m-since-1980") }}
                 </h3>
               </v-col>
               <v-col class="py-0" style="text-align: -webkit-center">
