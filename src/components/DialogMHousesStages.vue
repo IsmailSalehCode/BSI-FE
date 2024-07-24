@@ -74,7 +74,9 @@
         </v-row>
       </v-card-text>
       <v-card-actions>
-        <v-btn block @click="close" color="success">{{ $t("close") }}</v-btn>
+        <v-btn block variant="tonal" @click="close" color="success">{{
+          $t("close")
+        }}</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
