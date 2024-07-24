@@ -49,6 +49,12 @@
           <v-col cols="12">
             <img-c :src="getImg('transport-unloading.webp')" />
           </v-col>
+          <v-col cols="12" class="pb-0">
+            <p>2. {{ $t("modules-install") }}</p>
+          </v-col>
+          <v-col cols="12">
+            <img-c :src="getImg('modules-installation.webp')" />
+          </v-col>
         </v-row>
       </v-card-text>
     </v-card>
