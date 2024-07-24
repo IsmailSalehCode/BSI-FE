@@ -40,6 +40,15 @@
           <v-col>
             <img-c :src="getImg('truck-loading.webp')" />
           </v-col>
+          <v-col cols="12" class="pb-0">
+            <h3>II. {{ $t("mounting-the-modules") }}</h3>
+          </v-col>
+          <v-col cols="12" class="pb-0">
+            <p>1. {{ $t("transport-and-unloading") }}</p>
+          </v-col>
+          <v-col cols="12">
+            <img-c :src="getImg('transport-unloading.webp')" />
+          </v-col>
         </v-row>
       </v-card-text>
     </v-card>
