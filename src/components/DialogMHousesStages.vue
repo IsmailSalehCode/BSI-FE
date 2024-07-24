@@ -1,5 +1,9 @@
 <template>
-  <v-dialog v-model="dialog" fullscreen transition="dialog-bottom-transition">
+  <v-dialog
+    style="max-width: 800px"
+    v-model="dialog"
+    transition="dialog-bottom-transition"
+  >
     <v-card>
       <v-toolbar density="compact">
         <v-spacer></v-spacer>
@@ -98,4 +102,3 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
