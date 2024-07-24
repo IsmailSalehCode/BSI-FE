@@ -1,7 +1,9 @@
 <template>
   <v-expansion-panels multiple>
     <v-expansion-panel v-for="i in items" :key="i.title">
-      <v-expansion-panel-title>{{ i.title }}</v-expansion-panel-title>
+      <v-expansion-panel-title>
+        <div v-html="i.title"></div>
+      </v-expansion-panel-title>
       <v-expansion-panel-text>
         <img-c :src="getImg(i.imgName)" />
       </v-expansion-panel-text>
@@ -22,23 +24,23 @@ export default {
       imgrootBlueprints: "/mhouses/blueprints",
       items: [
         {
-          title: "1",
+          title: "76.8 (63.5) m<sup>2</sup>",
           imgName: "BOX_8x_76_(63)m2.png",
         },
         {
-          title: "2",
+          title: "96 (86.5) m<sup>2</sup>",
           imgName: "BOX_10x_96_(86)m2.png",
         },
         {
-          title: "3",
+          title: "115.2 (100.5) m<sup>2</sup>",
           imgName: "BOX_12x_115_(100)m2.png",
         },
         {
-          title: "4",
+          title: "Example House 1",
           imgName: "example-house-1.png",
         },
         {
-          title: "5",
+          title: "Example House 2",
           imgName: "example-house-2.png",
         },
       ],
