@@ -1,12 +1,14 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col>
+    <v-row class="text-center align-center">
+      <v-col cols="12" md="4" lg="5">
         <h1>Модулярни/сглобяеми къщи</h1>
+      </v-col>
+      <v-col cols="12" md="8" lg="7">
         <h2>Срок на изпълнение: 20-30 дни</h2>
         <v-btn
           style="text-transform: none"
-          variant="outlined"
+          variant="plain"
           @click="openDialog('see-stages')"
           >{{ $t("btn-label-see-stages") }}</v-btn
         >
