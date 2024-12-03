@@ -18,7 +18,7 @@
         :key="item.path"
       >
         <v-btn :active="false" style="font-size: small" :to="item.path">{{
-          item.title
+          $t(item.title)
         }}</v-btn>
       </v-col>
       <v-app-bar-nav-icon
