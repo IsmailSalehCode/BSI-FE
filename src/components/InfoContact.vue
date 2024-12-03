@@ -12,8 +12,8 @@
           ></iframe>
         </div>
       </v-col>
-      <v-col cols="12" style="max-width: 500px">
-        <v-card variant="outlined" tile>
+      <v-col cols="12" style="max-width: 420px">
+        <v-card variant="outlined" tile rounded="lg">
           <v-col cols="12">
             <v-row style="align-items: center">
               <v-col class="py-0">
@@ -21,7 +21,7 @@
                   {{ $t("contact-card-title") }}
                 </h3>
               </v-col>
-              <v-col class="py-0" style="text-align: -webkit-center">
+              <v-col class="py-0" style="max-width: 115px">
                 <v-img
                   aspect-ratio="1"
                   style="max-width: 100px"
@@ -30,6 +30,7 @@
               </v-col>
             </v-row>
           </v-col>
+          <hr />
           <v-card-text>
             <p v-for="item in contactItems" :key="item.text">
               <b>{{ item.label }}:&nbsp;</b>
