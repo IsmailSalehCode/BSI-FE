@@ -18,7 +18,7 @@
             <v-row style="align-items: center">
               <v-col class="py-0">
                 <h3 style="font-style: italic">
-                  {{ $t("construction-prj-m-since-1980") }}
+                  {{ $t("contact-card-title") }}
                 </h3>
               </v-col>
               <v-col class="py-0" style="text-align: -webkit-center">
@@ -54,7 +54,6 @@ import {
   address,
   email,
   phoneOsama,
-  phoneKrasi,
   phoneAccounting,
   emailAccounting,
 } from "../stores/contactStore";
@@ -68,7 +67,6 @@ export default {
         email,
         phoneAccounting,
         emailAccounting,
-        phoneKrasi,
       ],
     };
   },
